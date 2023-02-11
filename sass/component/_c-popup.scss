@@ -1,0 +1,103 @@
+.c-popup {
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background: rgba($color: #000000, $alpha: 0.54);
+    z-index: 100;
+    &--2{
+        .c-popup__content{
+            padding: 34.5px 20px;
+        }
+    }
+    &__inner {
+        // height: 210px;
+        border-radius: 6px;
+        position: fixed;
+        top: calc(50% - 69px);
+        left: 50%;
+        transform: translate(-50%, -50%);
+        z-index: 1000;
+        width: 797px;
+        max-width: calc(100% - 30px);
+        transition: .4s all;
+    }
+    &__content {
+        background-color: #fff;
+        padding: 18px 15px 10px 33px;
+        border-radius: 6px;
+        margin-bottom: 22px;
+        h5 {
+            text-align: center;
+            font-weight: 700;
+            font-size: 14px;
+            line-height: 17px;
+        }
+        h4{
+            text-align: center;
+            font-weight: 500;
+            font-size: 16px;
+            line-height: 19px;
+        }
+        p {
+            margin-top: 20px;
+            font-size: 14px;
+            line-height: 17px;
+            margin-bottom: 12px;
+        }
+    }
+    &__group-btn {
+        display: flex;
+        width: calc(100%);
+        gap: 16px;
+        .c-btn-white {
+            width: 100%;
+            border: none;
+            border-radius: 6px;
+            height: 42px;
+            span {
+                line-height: 19px;
+                font-size: 16px;
+            }
+        }
+    }
+    &__form-group {
+        margin-bottom: 5px;
+        input[type=radio]:checked+label:before,
+        input[type=radio]:not(:checked)+label:before {
+            content: "";
+            position: absolute;
+            left: 0;
+            top: 0;
+            width: 12px;
+            height: 12px;
+            border: 2px solid $cBase;
+            border-radius: 100%;
+            background: #fff;
+        }
+        input[type=radio]:checked+label:after,
+        input[type=radio]:not(:checked)+label:after {
+            background: url(../img/user/list-activity-history/icn_radio.svg) center no-repeat;
+            content: "";
+            width: 10px;
+            height: 10px;
+            position: absolute;
+            top: 3px;
+            left: 3px;
+            border-radius: 100%;
+            -webkit-transition: all 0.2s ease;
+            transition: all 0.2s ease;
+        }
+        input[type=radio]:checked+label,
+        input[type=radio]:not(:checked)+label {
+            position: relative;
+            padding-left: 40px;
+            font-size: 14px;
+            line-height: 17px;
+            display: inline-block;
+            color: #000000;
+            margin-bottom: 0;
+        }
+    }
+}

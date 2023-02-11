@@ -1,0 +1,37 @@
+.p-u-detail-list-payment {
+    &__header-main {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        a {
+            display: flex;
+            align-items: center;
+            span {
+                font-weight: 700;
+                font-size: 18px;
+                line-height: 22px;
+                margin-left: 18px;
+            }
+        }
+    }
+    &__content {
+        margin-top: 20px;
+        .desc {
+            display: flex;
+            justify-content: space-between;
+            margin-bottom: 9px;
+            b {
+                font-weight: 700;
+                font-size: 14px;
+                line-height: 20px;
+                color: #878686;
+            }
+            span {
+                font-weight: 500;
+                font-size: 14px;
+                line-height: 20px;
+                text-align: right;
+            }
+        }
+    }
+}

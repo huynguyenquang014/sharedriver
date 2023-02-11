@@ -1,0 +1,231 @@
+@charset "utf-8";
+
+.p-top-details {
+    .l-container{
+        width: 1200px;
+    }
+    .l-header{
+        background-color: transparent;
+        position: relative;
+        z-index: 2;
+        .l-row{
+            align-items: center;
+        }
+        &__col-left{
+            display: flex;
+            align-items: center;
+            @include brSpLandscape{
+                flex: 100%;
+                max-width: 100%;
+            }
+        }
+        &__col-right{
+            text-align: right;
+            @include brSpLandscape{
+                flex: 100%;
+                max-width: 100%;
+            }
+        }
+        &__logo{
+            margin-right: 15px;
+        }
+        &__customer-login{
+            display: inline-flex;
+            align-items: center;
+        }
+        &__driver-login{
+            display: inline-flex;
+            align-items: center;
+            margin-left: 20px;
+        }
+    }
+    
+    &__main{
+        margin-top: -89px;
+        position: relative;
+        z-index: 1;
+        @include brTablet{
+            margin-top: 0;
+        }
+    }
+
+    &__slider{
+        &__item{
+            position: relative;
+            > img{
+                @include brSpLandscape{
+                    height: 450px;
+                    object-fit: cover;
+                }
+            }
+        }
+        &__content{
+            text-align: center;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            z-index: 1;
+            h3{
+                font-size: 25px;
+                margin-bottom: 15px;
+            }
+        }
+        .slick-dots{
+            position: absolute;
+            bottom: 20px;
+            left: 50%;
+            transform: translateX(-50%);
+            z-index: 1;
+            li{
+                display: inline-flex;
+                margin: 0 4px;
+                &.slick-active{
+                    button{
+                        background-color: #000;
+                    }
+                }
+                button{
+                    font-size: 0;
+                    width: 10px;
+                    height: 10px;
+                    border-radius: 50%;
+                    background-color: #fff;
+                }
+            }
+        }
+    }
+
+    &__drivers{
+        display: flex;
+        a{
+            flex: 50%;
+            max-width: 50%;
+            border: 1px solid #000;
+            text-align: center;
+            padding: 30px;
+            @include brSpLandscape{
+                padding: 15px;
+            }
+        }
+        &__for-owner{
+            background-color: #000;
+            color: #fff;
+        }
+    }
+
+    &__summary{
+        margin-top: 80px;
+        text-align: center;
+        &__title{
+            margin-bottom: 10px;
+            font-size: 25px;
+        }
+        &__desc{
+            margin-bottom: 20px;
+        }
+        &__btn-details{
+            margin-top: 30px;
+            border: 1px solid #000;
+            padding: 10px 20px;
+            display: inline-block;
+            text-align: center;
+            width: 300px;
+            max-width: 100%;
+        }
+        &__space{
+            margin-bottom: 50px;
+        }
+        &__section{
+            display: flex;
+            flex-wrap: wrap;
+            align-items: center;
+            margin-bottom: 30px;
+            + .p-top-details__summary__section{
+                flex-direction: row-reverse;
+                p{
+                    padding-right: 0;
+                    padding-left: 30px;
+                    @include brSpLandscape{
+                        padding-left: 0;
+                    }
+                }
+            }
+            p{
+                flex: 55%;
+                max-width: 55%;
+                padding-right: 30px;
+                text-align: left;
+                @include brSpLandscape{
+                    flex: 100%;
+                    max-width: 100%;
+                    padding-right: 0;
+                    margin-bottom: 20px;
+                }
+            }
+            img{
+                flex: 45%;
+                max-width: 45%;
+                @include brSpLandscape{
+                    flex: 100%;
+                    max-width: 100%;
+                }
+            }
+        }
+        &__group-btn{
+            display: flex;
+            margin-top: 50px;
+            a{
+                flex: 50%;
+                max-width: 50%;
+                border: 1px solid #000;
+                text-align: center;
+                padding: 20px;
+                @include brSpLandscape{
+                    padding: 15px;
+                }
+            }
+            &-black{
+                background-color: #000;
+                color: #fff;
+            }
+        }
+    }
+
+
+    .l-footer{
+        margin-top: 100px;
+        border-top: 1px solid #000;
+        padding-top: 100px;
+        &__main{
+            margin-bottom: 70px;
+        }
+        &__logo{
+            display: block;
+            margin-bottom: 30px;
+            text-align: center;
+        }
+        &__col{
+            flex: 25%;
+            max-width: 25%;
+            padding-left: 15px;
+            padding-right: 15px;
+            @include brSpLandscape{
+                flex: 50%;
+                max-width: 50%;
+                margin-bottom: 30px;
+            }
+        }
+        &__title{
+            font-size: 20px;
+            margin-bottom: 10px;
+        }
+        &__copyright{
+            border-top: 1px solid #000;
+            p{
+                text-align: center;
+                padding: 15px;
+            }
+        }
+    }
+}

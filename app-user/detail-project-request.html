@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="jp">
+
+<head>
+    <meta charset="UTF-8">
+    <title>ShareDriver</title>
+    <meta name="format-detection" content="telephone=no" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./../assets/css/slick.css">
+    <link href="./../assets/css/style.css" rel="stylesheet">
+</head>
+
+<body>
+    <!-- Header -->
+    <header class="l-header">
+        <div class="l-container">
+            <div class="l-row">
+                <div class="l-col">
+                    <a href="#" class="l-header__menu">
+                        <img src="./../assets/img/driver/common/icn_menu.svg" alt="">
+                    </a>
+                </div>
+                <div class="l-col-auto">
+                    <a href="#" class="l-header__noti">
+                        <img src="./../assets/img/driver/common/icn_bell.svg" alt="">
+                    </a>
+                    <a href="#" class="l-header__user">
+                        <img src="./../assets/img/driver/common/icn_user.svg" alt="">
+                    </a>
+                </div>
+            </div>
+        </div>
+    </header>
+    <!-- End header -->
+
+    <!---Main-->
+    <section class="mt-25">
+        <div class="p-u-detail-project-request">
+            <div class="l-container">
+                <div class="p-u-detail-project-request__pattern">
+                    <h3>ご使用形態</h3>
+                    <select name="" id="">
+                        <option value="片道/往復" disabled hidden selected>片道/往復</option>
+                        <option value="片道">片道</option>
+                        <option value="往復">往復</option>
+                    </select>
+                </div>
+                <div class="p-u-detail-project-request__fare">
+                    <h3>高速道路料金</h3>
+                    <select>
+                        <option value="あり/ない" disabled hidden selected>あり/ない</option>
+                        <option value="あり">あり</option>
+                        <option value="ない">ない</option>
+                    </select>
+                </div>
+                <div class="p-u-detail-project-request__displacement">
+                    <h3>排気量</h3>
+                    <select name="" id="">
+                        <option value="1500ccまで/2500ccまで/4000ccまで" disabled hidden selected>
+                            1500ccまで/2500ccまで/4000ccまで
+                        </option>
+                        <option value="1500ccまで">1500ccまで</option>
+                        <option value="2500ccまで">2500ccまで</option>
+                        <option value="4000ccまで">4000ccまで</option>
+
+                    </select>
+                </div>
+                <div class="p-u-detail-project-request__inspection">
+                    <h3>車検証</h3>
+                    <select name="" id="">
+                        <option value="あり/ない" disabled hidden selected>あり/ない</option>
+                        <option value="あり">ない</option>
+                    </select>
+                </div>
+                <div class="p-u-detail-project-request__car">
+                    <h3>車種</h3>
+                    <select name="" id="">
+                        <option value="2t/4t/10t/10人乗り/11人乗り以上/けん引/特殊車両" disabled selected hidden>
+                            2t/4t/10t/10人乗り/11人乗り以上/けん引/特殊車両
+                        </option>
+                        <option value="2t">2t</option>
+                        <option value="4t">4t</option>
+                        <option value="10t">10t</option>
+                        <option value="10人乗り">10人乗り</option>
+                        <option value="11人乗り以上">11人乗り以上</option>
+                        <option value="けん引/">けん引/</option>
+                        <option value="特殊車両">特殊車両</option>
+                    </select>
+                </div>
+                <div class="p-u-detail-project-request__handle">
+                    <h3>ハンドル位置</h3>
+                    <select name="" id="">
+                        <option value="左側/右側" disabled hidden selected>左側/右側</option>
+                        <option value="左側">左側</option>
+                        <option value="右側">右側</option>
+                    </select>
+                </div>
+                <p class="p-u-detail-project-request__confirm">
+                    <input type="checkbox" id="規約に同意する">
+                    <label for="規約に同意する">規約に同意する</label>
+                </p>
+                <div class="p-u-detail-project-request__group-btn">
+                    <a href="#" class="c-btn-black"><span>案件を依頼する</span></a>
+                    <a href="#" class="c-btn-white"><span>戻る</span></a>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!---End main-->
+
+    <!-- Javascript -->
+    <script src="./../assets/js/jquery.min.js"></script>
+    <script src="./../assets/js/jquery-ui.min.js"></script>
+    <script src="./../assets/js/slick.min.js"></script>
+    <script src="./../assets/js/user-common.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,57 @@
+.p-profile{
+    &__inner{
+        margin-top: 27px;
+        margin-bottom: 30px;
+    }
+    &__top{
+        display: flex;
+        align-items: center;
+        margin-bottom: 28px;
+    }
+    &__img-user{
+        margin-right: 19px;
+        position: relative;
+        > img{
+            width: 50px;
+            height: 50px;
+            border-radius: 50%;
+            object-fit: cover;
+        }
+        &__icon-camera{
+            position: absolute;
+            bottom: -3px;
+            right: -3px;
+            display: flex;
+            z-index: 1;
+        }
+    }
+    &__user-name{
+        font-weight: 700;
+        font-size: 18px;
+        line-height: 22px;
+    }
+    &__section{
+        margin-bottom: 14px;
+        h4{
+            font-weight: 700;
+            font-size: 16px;
+            line-height: 19px;
+            margin-bottom: 5px;
+        }
+        ul{
+            li{
+                + li{
+                    border-top: 1px solid #C1BEBE;
+                }
+                a{
+                    padding: 13px 0;
+                    font-weight: 500;
+                    font-size: 14px;
+                    line-height: 17px;
+                    display: block;
+                    background: url("../img/driver/common/icn_arrow_right.svg") no-repeat calc(100% - 7px) center;
+                }
+            }
+        }
+    }
+}

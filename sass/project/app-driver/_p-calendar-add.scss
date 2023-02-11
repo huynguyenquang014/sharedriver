@@ -1,0 +1,59 @@
+.p-calendar-add{
+    &__inner{
+        margin-top: 32px;
+        margin-bottom: 30px;
+    }
+    &__title{
+        font-weight: 700;
+        font-size: 16px;
+        line-height: 19px;
+        margin-bottom: 37px;
+    }
+    .c-form{
+        &__groups{
+            display: flex;
+            flex-direction: column;
+        }
+        &__form-group{
+            + .c-form__form-group{
+                margin-top: 24px;
+            }
+        }
+        &__label{
+            font-weight: 700;
+            font-size: 16px;
+            line-height: 19px;
+            margin-bottom: 12px;
+        }
+        input[type="datetime-local"]{
+            font-weight: 500;
+            font-size: 14px;
+            line-height: 17px;
+            color: #676767;
+            background: url("../img/driver/common/icn_calendar_02.svg") no-repeat calc(100% - 10px) center;
+            &::-webkit-calendar-picker-indicator{
+                opacity: 0;
+                cursor: pointer;
+            }
+        }
+        .c-btn__black{
+            padding: 15px 20px 14px;
+            margin-bottom: 10px;
+        }
+    }
+    &__group-btn{
+        text-align: center;
+        width: 767px;
+        max-width: calc(100% - 30px);
+        position: fixed;
+        bottom: 20px;
+        left: 50%;
+        transform: translateX(-50%);
+        a{
+            font-weight: 500;
+            font-size: 14px;
+            line-height: 17px;
+            color: #696969;
+        }
+    }
+}

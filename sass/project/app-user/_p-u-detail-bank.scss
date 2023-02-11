@@ -1,0 +1,82 @@
+.p-u-detail-bank {
+    margin-top: -7px;
+    .l-container {
+        padding-left: 25px;
+        padding-right: 25px;
+        position: relative;
+    }
+    &__header-main {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        position: relative;
+        a {
+            position: absolute;
+            left: 0;
+            top: 4px;
+        }
+        span {
+            font-weight: 700;
+            font-size: 20px;
+            line-height: 24px;
+            font-family: 'Zen Kaku Gothic New';
+            font-style: normal;
+            text-align: center;
+        }
+    }
+    &__content {
+        margin-top: 24px;
+        .alert {
+            font-family: 'Zen Kaku Gothic New';
+            font-style: normal;
+            font-weight: 400;
+            font-size: 14px;
+            line-height: 20px;
+            color: #2C3E50;
+            margin-bottom: 24px;
+        }
+        label {
+            font-family: 'Zen Kaku Gothic New';
+            font-style: normal;
+            font-weight: 400;
+            font-size: 14px;
+            line-height: 20px;
+            color: #768291;
+        }
+        &__box {
+            border: 1px solid #CBDAFF;
+            border-radius: 4px;
+            min-width: 343px;
+            margin-left: -9px;
+            padding: 5px 6px;
+            margin-bottom: 12px;
+            input {
+                margin-top: -2px;
+                border: none;
+                padding: 0;
+                height: 21px;
+                font-family: 'Zen Kaku Gothic New';
+                font-style: normal;
+                font-weight: 400;
+                font-size: 16px;
+                line-height: 20px;
+            }
+        }
+        &__handle {
+            text-align: center;
+            margin-top: 43px;
+            .c-btn-black {
+                width: 118px;
+                max-width: 100%;
+                border-radius: 4px;
+                height: 48px;
+                span {
+                    font-family: 'Zen Kaku Gothic New';
+                    font-style: normal;
+                    font-weight: 500;
+                    line-height: 16px;
+                }
+            }
+        }
+    }
+}

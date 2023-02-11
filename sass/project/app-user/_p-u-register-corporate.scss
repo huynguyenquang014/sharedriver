@@ -1,0 +1,53 @@
+.p-u-register-comporate {
+    h3 {
+        font-weight: 700;
+        font-size: 18px;
+        line-height: 22px;
+    }
+    input,
+    select {
+        font-size: 16px;
+        line-height: 19px;
+    }
+    &__content {
+        margin-top: 58px;
+        &__box {
+            margin-bottom: 16px;
+            label {
+                font-weight: 700;
+                font-size: 16px;
+                line-height: 19px;
+            }
+            select {
+                margin-top: 2px;
+            }
+        }
+        &__address {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 8px 25px;
+            margin-top: -3px;
+            margin-bottom: 16px;
+            >div {
+                width: calc(50% - 25px / 2);
+            }
+            label {
+                font-weight: 500;
+                font-size: 14px;
+                line-height: 17px;
+            }
+            select,
+            input {
+                margin-top: 3px;
+            }
+        }
+    }
+    &__handle {
+        padding: 0 1px;
+        margin-top: 125px;
+        .c-btn-black {
+            width: 100%;
+            height: 56px;
+        }
+    }
+}

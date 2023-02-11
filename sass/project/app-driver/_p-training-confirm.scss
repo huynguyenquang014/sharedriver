@@ -1,0 +1,21 @@
+.p-training-confirm{
+    text-align: center;
+    &__inner{
+        margin-top: 350px;
+        margin-bottom: 30px;
+    }
+    &__desc{
+        font-weight: 700;
+        font-size: 16px;
+        line-height: 19px;
+        margin-bottom: 71px;
+    }
+    &__group-btn{
+        .c-btn__black{
+            border: 1px solid #000;
+        }
+        a{
+            padding: 14px 20px 13px;
+        }
+    }
+}

@@ -1,0 +1,43 @@
+.p-not-found {
+    position: relative;
+    &__content {
+        height: calc(100vh - 56px);
+        text-align: center;
+        position: relative;
+        &__inner {
+            position: absolute;
+            top: calc(50% - 30px);
+            left: 50%;
+            transform: translate(-50%, -50%);
+            width: 90%;
+        }
+        &__desc {
+            font-weight: 700;
+            font-size: 16px;
+            line-height: 26px;
+            color: #A1A1A1;
+            margin-top: 25px;
+        }
+    }
+    &__image {
+        position: relative;
+        span {
+            position: absolute;
+            left: 50%;
+            top: calc(50% + 40px);
+            transform: translate(-50%, -50%);
+            font-weight: 900;
+            font-size: 49px;
+            color: #A1A1A1;
+        }
+    }
+    &__btn-back-top {
+        position: absolute;
+        bottom: 42px;
+        left: 50%;
+        transform: translateX(-50%);
+        font-weight: 500;
+        font-size: 14px;
+        line-height: 17px;
+    }
+}

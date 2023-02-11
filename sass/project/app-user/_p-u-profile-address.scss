@@ -1,0 +1,131 @@
+.p-u-profile-address {
+    &__inner {
+        margin-top: 24px;
+        margin-bottom: 30px;
+    }
+    &__top {
+        display: flex;
+        justify-content: space-between;
+    }
+    &__avatar-upload {
+        display: flex;
+        justify-content: center;
+        position: relative;
+        margin-bottom: 28px;
+        &__box {
+            position: relative;
+        }
+    }
+    &__avatar-edit {
+        position: absolute;
+        right: 0;
+        z-index: 1;
+        bottom: 0;
+        input {
+            display: none;
+            +label {
+                display: flex;
+                cursor: pointer;
+            }
+        }
+    }
+    &__avatar-preview {
+        img {
+            width: 56px;
+            height: 56px;
+            border-radius: 50%;
+            object-fit: cover;
+        }
+    }
+    &__btn-back {
+        font-weight: 700;
+        font-size: 18px;
+        line-height: 22px;
+        display: flex;
+        align-items: center;
+        position: relative;
+        z-index: 2;
+        span {
+            margin-left: 18px;
+        }
+    }
+    .c-form {
+        margin-top: 24px;
+        &__form-group {
+            +.c-form__form-group {
+                margin-top: 16px;
+            }
+        }
+        &__label-small {
+            margin-bottom: 5px;
+        }
+        .l-row {
+            margin-left: -12.5px;
+            margin-right: -12.5px;
+        }
+        .l-col-6 {
+            padding-left: 12.5px;
+            padding-right: 12.5px;
+        }
+        input {
+            font-size: 16px;
+            line-height: 19px;
+            color: $cBase;
+        }
+        select {
+            padding-left: 8px;
+            color: $cBase;
+        }
+        &__checkbox {
+            margin-bottom: 4px;
+        }
+    }
+    &__agree {
+        margin-top: 23px;
+        .c-form__checkbox label {
+            font-weight: 500;
+            font-size: 16px;
+            line-height: 19px;
+        }
+    }
+    &__btn-continue {
+        margin-top: 26px;
+        button {
+            font-weight: 700;
+            font-size: 16px;
+            line-height: 19px;
+            color: #FFFFFF;
+            background: #121212;
+            text-align: center;
+            padding: 15px 20px 14px;
+            width: 100%;
+        }
+        .c-btn-white {
+            width: 100%;
+            border: none;
+            span {
+                font-weight: 400;
+            }
+        }
+    }
+    &__btn-add {
+        margin-top: 182px;
+        a {
+            border-color: #bdbdbd;
+            padding: 12px 20px 11px;
+        }
+        span {
+            position: relative;
+            img {
+                position: absolute;
+                left: -52px;
+                top: 50%;
+                transform: translateY(-50%);
+            }
+        }
+    }
+    &__btn-return {
+        margin-top: 13px;
+        text-align: center;
+    }
+}

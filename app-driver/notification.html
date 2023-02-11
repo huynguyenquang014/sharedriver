@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="jp">
+
+<head>
+    <meta charset="UTF-8">
+    <title>ShareDriver</title>
+    <meta name="format-detection" content="telephone=no" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <link rel="icon" href="./../assets/img/driver/common/favicon.ico">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./../assets/css/slick.css">
+    <link href="./../assets/css/style.css" rel="stylesheet">
+</head>
+
+<body>
+    <!-- Header -->
+    <header class="l-header">
+        <div class="l-container">
+            <div class="l-row">
+                <div class="l-col">
+                    <a href="#" class="l-header__menu">
+                        <img src="./../assets/img/driver/common/icn_menu.svg" alt="">
+                    </a>                   
+                </div>
+                <div class="l-col-auto">
+                    <a href="#" class="l-header__noti l-header__noti--active">
+                        <img src="./../assets/img/driver/common/icn_bell_white.svg" alt="">
+                    </a>
+                    <a href="#" class="l-header__user">
+                        <img src="./../assets/img/driver/common/icn_user.svg" alt="">
+                    </a>
+                </div>
+            </div>
+        </div>
+    </header>
+    <!-- End header -->
+
+    <section class="p-notification">
+        <div class="l-container">
+            <div class="p-notification__inner">
+                <div class="p-notification__top">
+                    <h3>通知</h3>
+                    <a href="#" class="p-notification__btn-delete">
+                        <img src="./../assets/img/driver/common/icn_trash.svg" alt="">
+                    </a>
+                    <a href="#" class="p-notification__top__btn-select-all">
+                        <input type="checkbox" class="selectedId" id="selectall">
+                        <label for="selectall">全て選択する</label>
+                    </a>
+                </div>
+                <form>
+                    <div class="p-notification__item">
+                        <input type="checkbox" class="selectedId" id="noti-1">
+                        <label for="noti-1">
+                            <div class="p-notification__item__img">
+                                <img src="./../assets/img/driver/common/img_notification.png" alt="">
+                            </div>
+                            <div class="p-notification__item__info">
+                                <h4>通知 1</h4>
+                                <p>東京－千葉の案件は完了<br>
+                                    致しました</p>
+                            </div>
+                            <div class="p-notification__item__date">2022/06/20</div>
+                        </label>
+                    </div>
+                    <div class="p-notification__item">
+                        <input type="checkbox" class="selectedId" id="noti-2">
+                        <label for="noti-2">
+                            <div class="p-notification__item__img">
+                                <img src="./../assets/img/driver/common/img_notification.png" alt="">
+                            </div>
+                            <div class="p-notification__item__info">
+                                <h4>通知 2</h4>
+                                <p>東京－千葉の案件は完了<br>
+                                    致しました</p>
+                            </div>
+                            <div class="p-notification__item__date">2022/06/20</div>
+                        </label>
+                    </div>
+                    <div class="p-notification__item">
+                        <input type="checkbox" class="selectedId" id="noti-3">
+                        <label for="noti-3">
+                            <div class="p-notification__item__img">
+                                <img src="./../assets/img/driver/common/img_notification.png" alt="">
+                            </div>
+                            <div class="p-notification__item__info">
+                                <h4>通知 3</h4>
+                                <p>東京－千葉の案件は完了<br>
+                                    致しました</p>
+                            </div>
+                            <div class="p-notification__item__date">2022/06/20</div>
+                        </label>
+                    </div>
+                    <div class="p-notification__item">
+                        <input type="checkbox" class="selectedId" id="noti-4">
+                        <label for="noti-4">
+                            <div class="p-notification__item__img">
+                                <img src="./../assets/img/driver/common/img_notification.png" alt="">
+                            </div>
+                            <div class="p-notification__item__info">
+                                <h4>通知 4</h4>
+                                <p>東京－千葉の案件は完了<br>
+                                    致しました</p>
+                            </div>
+                            <div class="p-notification__item__date">2022/06/20</div>
+                        </label>
+                    </div>
+                    <div class="p-notification__group-btn">
+                        <button class="c-btn__black">削除</button>
+                        <a href="#">キャンセル</a>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="l-footer">
+        
+    </footer>
+    <!-- End footer -->
+    
+    <!-- Javascript -->
+    <script src="./../assets/js/jquery.min.js"></script>
+    <script src="./../assets/js/jquery-ui.min.js"></script>
+    <script src="./../assets/js/slick.min.js"></script>
+    <script src="./../assets/js/common.js"></script>
+</body>
+
+</html>

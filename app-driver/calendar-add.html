@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="jp">
+
+<head>
+    <meta charset="UTF-8">
+    <title>ShareDriver</title>
+    <meta name="format-detection" content="telephone=no" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <link rel="icon" href="./../assets/img/driver/common/favicon.ico">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./../assets/css/slick.css">
+    <link href="./../assets/css/style.css" rel="stylesheet">
+</head>
+
+<body>
+    <!-- Header -->
+    <header class="l-header">
+        <div class="l-container">
+            <div class="l-row">
+                <div class="l-col">
+                    <a href="#" class="l-header__menu">
+                        <img src="./../assets/img/driver/common/icn_menu.svg" alt="">
+                    </a>
+                </div>
+                <div class="l-col-auto">
+                    <a href="#" class="l-header__noti">
+                        <img src="./../assets/img/driver/common/icn_bell.svg" alt="">
+                    </a>
+                    <a href="#" class="l-header__user">
+                        <img src="./../assets/img/driver/common/icn_user.svg" alt="">
+                    </a>
+                </div>
+            </div>
+        </div>
+    </header>
+    <!-- End header -->
+
+    <section class="p-calendar-add">
+        <div class="l-container">
+            <div class="p-calendar-add__inner">
+                <h3 class="p-calendar-add__title">対応可能スケジュール</h3>
+                <form action="" class="c-form">
+                    <div class="c-form-groups">
+                        <div class="c-form__form-group">
+                            <h5 class="c-form__label">スタート時間:</h5>
+                            <input type="datetime-local" value="2022-09-30T19:30" >
+                        </div>
+                        <div class="c-form__form-group">
+                            <h5 class="c-form__label">終了時間:</h5> 
+                            <input type="datetime-local" value="2022-09-30T19:30">
+                        </div>
+                        <div class="c-form__form-group">
+                            <h5 class="c-form__label">月別でスケジュールしませんか</h5>
+                            <div class="l-row">
+                                <div class="l-col-6">
+                                    <div class="c-form__checkbox">
+                                        <input type="checkbox" id="男性">
+                                        <label for="男性">あり</label>
+                                    </div>
+                                </div>
+                                <div class="l-col-6">
+                                    <div class="c-form__checkbox">
+                                        <input type="checkbox" id="女性">
+                                        <label for="女性">ない</label>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="p-calendar-add__group-btn">
+                        <button class="c-btn__black" type="submit">保存</button>
+                        <a href="#">キャンセル</a>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="l-footer">
+        
+    </footer>
+    <!-- End footer -->
+    
+    <!-- Javascript -->
+    <script src="./../assets/js/jquery.min.js"></script>
+    <script src="./../assets/js/jquery-ui.min.js"></script>
+    <script src="./../assets/js/slick.min.js"></script>
+    <script src="./../assets/js/common.js"></script>
+</body>
+
+</html>

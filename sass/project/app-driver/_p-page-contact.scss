@@ -1,0 +1,44 @@
+.p-page-contact{
+    &__inner{
+        margin-top: 24px;
+        margin-bottom: 30px;
+    }
+    form{
+        .form-group{
+            margin-bottom: 12px;
+            h3{
+                font-weight: 700;
+                font-size: 16px;
+                line-height: 19px;
+                margin-bottom: 8px;
+            }
+            h4{
+                font-weight: 400;
+                font-size: 14px;
+                line-height: 17px;
+                margin-bottom: -5px;
+            }
+            textarea{
+                font-size: 14px;
+                line-height: 17px;
+                color: #727272;
+                height: 85px;
+            }
+            input{
+                height: 44px;
+                width: 100%;
+                padding: 0;
+                border: none;
+                border-bottom: 1px solid #C1BEBE;
+                color: #000;
+                font-weight: 500;
+                font-size: 16px;
+                line-height: 19px;
+                background-color: transparent;
+            }
+        }
+        button{
+            margin-top: 76px;
+        }
+    }
+}

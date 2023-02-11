@@ -1,0 +1,261 @@
+.p-u-detail-credit-card {
+    margin-top: -7px;
+    .l-container {
+        padding-left: 25px;
+        padding-right: 25px;
+        position: relative;
+    }
+    &__header-main {
+        display: flex;
+        align-items: center;
+        text-align: center;
+        justify-content: center;
+        position: relative;
+        a {
+            position: absolute;
+            left: 0;
+            top: 4px;
+        }
+        span {
+            font-weight: 700;
+            font-size: 20px;
+            line-height: 24px;
+            font-family: 'Zen Kaku Gothic New';
+            font-style: normal;
+        }
+    }
+    .title-number-card,
+    .title-date {
+        font-weight: 500;
+        font-size: 16px;
+        line-height: 16px;
+        margin-top: 24px;
+        font-family: 'Zen Kaku Gothic New';
+        font-style: normal;
+    }
+    .title-date {
+        margin-top: 28px;
+        margin-bottom: 18px;
+    }
+    &__content {
+        &__number-card {
+            display: flex;
+            gap: 5px;
+            margin-top: 18px;
+            position: relative;
+            align-items: center;
+            input[type="number"],
+            input[type="password"] {
+                width: 25%;
+                min-width: 68px;
+                height: 50px;
+                border: 1px solid $cBase;
+                text-align: center;
+                color: #2C3E50;
+                font-size: 18px;
+                line-height: 24px;
+                font-weight: 500;
+                position: relative;
+                font-family: 'Zen Kaku Gothic New';
+                font-style: normal;
+                &:focus-visible {
+                    outline: none;
+                }
+                &::placeholder {
+                    color: #BDC3C7;
+                }
+            }
+        }
+    }
+    &__date {
+        .wrap2 {
+            right: 9px;
+        }
+        .wrap {
+            position: absolute;
+            width: 50%;
+            label {
+                position: absolute;
+                top: 50%;
+                transform: translateY(-50%);
+                margin-left: 8px;
+            }
+        }
+        .select {
+            cursor: pointer;
+            display: inline-block;
+            position: relative;
+            font-size: 16px;
+            color: #fff;
+            width: 68px;
+            height: 50px;
+            border: 1px solid black;
+        }
+        select {
+            display: none;
+        }
+        .custom-select {
+            position: absolute;
+            top: 0;
+            right: 0;
+            bottom: 0;
+            left: 0;
+            color: #2C3E50;
+            padding: 13px 12px;
+            transition: all 0.2s ease-in;
+            background: url("../img/user/common/icn_dropdown.svg") no-repeat center;
+            background-position-x: calc(100% - 15px);
+        }
+        .custom-select:active,
+        .custom-select.active {
+            background-color: #fff;
+            color: $cBase;
+        }
+        .select-options {
+            width: 49px;
+            height: 102px;
+            overflow-y: auto;
+            display: block;
+            position: absolute;
+            top: 100%;
+            right: 0;
+            left: 0;
+            z-index: 999;
+            margin: 0;
+            padding: 0;
+            list-style: none;
+            border: 0.5px solid #BDC3C7;
+            border-radius: 4px;
+            background: #fff;
+            margin-top: 1px;
+            display: none;
+        }
+        .select-options li {
+            color: #424242;
+            margin: 0;
+            transition: all 0.15s ease-in;
+            padding-left: 15px;
+        }
+        .select-options li:hover {
+            color: #424242;
+            background: #fff;
+        }
+        .select-options li[rel="hide"] {
+            display: none;
+        }
+         ::-webkit-scrollbar {
+            width: 3px;
+            background: #DEDEDE;
+            border-radius: 0 0 5px 0;
+        }
+         ::-webkit-scrollbar-thumb {
+            border-radius: 10px;
+            background-color: #9E9E9E;
+        }
+    }
+    &__holder,
+    &__security {
+        h3 {
+            font-weight: 500;
+            font-size: 16px;
+            line-height: 16px;
+            margin-bottom: 16px;
+            margin-top: 20px;
+        }
+        input {
+            height: 50px;
+            min-width: 327px;
+            border: 1px solid $cBase;
+            font-family: 'Zen Kaku Gothic New';
+            font-style: normal;
+            color: #2C3E50;
+            font-size: 18px;
+            line-height: 24px;
+            &::placeholder {
+                color: #BDC3C7;
+            }
+        }
+    }
+    .title-card-holder {
+        font-weight: 500;
+        font-size: 16px;
+        line-height: 16px;
+        margin-top: 97px;
+        margin-bottom: 15px;
+        font-family: 'Zen Kaku Gothic New';
+        font-style: normal;
+    }
+    &__automatic {
+        margin-top: 59px;
+        label {
+            font-family: 'Zen Kaku Gothic New';
+            font-style: normal;
+            font-size: 1.2rem;
+            display: block;
+            margin: 1em;
+            >input {
+                display: none;
+            }
+            span {
+                color: $cBase;
+                font-weight: 400;
+                font-size: 14px;
+                line-height: 24px;
+                margin-left: -21px;
+                font-family: 'Zen Kaku Gothic New';
+                font-style: normal;
+            }
+            i {
+                display: inline-block;
+                width: 42px;
+                height: 25px;
+                border-radius: 20px;
+                vertical-align: middle;
+                transition: .25s .09s;
+                position: relative;
+                background: #D1D1D6;
+                position: absolute;
+                right: 25px;
+                &:after {
+                    content: " ";
+                    display: block;
+                    width: 23px;
+                    height: 23px;
+                    top: 0.5px;
+                    left: 1px;
+                    border-radius: 50%;
+                    background: #fff;
+                    position: absolute;
+                    box-shadow: 1px 2px 4px 0 rgba(#000, .4);
+                    transition: .15s;
+                }
+            }
+            // Checked-state
+            >input:checked+i {
+                background: $cBase;
+            }
+            >input:checked+i+span {
+                color: $cBase;
+            }
+            >input:checked+i:after {
+                transform: translateX(17px);
+            }
+        }
+    }
+    &__group-handle {
+        text-align: center;
+        margin-top: 103px;
+        .c-btn-black {
+            width: 152px;
+            max-width: 100%;
+            height: 48px;
+            border-radius: 5px;
+            margin: auto;
+            span {
+                line-height: 24px;
+                font-family: 'Zen Kaku Gothic New';
+                font-style: normal;
+            }
+        }
+    }
+}

@@ -1,0 +1,28 @@
+.p-training-file-details{
+    &__inner{
+        margin-top: 27px;
+        margin-bottom: 30px;
+    }
+    &__btn-return{
+        display: flex;
+        align-items: center;
+        font-weight: 700;
+        font-size: 16px;
+        line-height: 19px;
+        margin-bottom: 28px;
+        span{
+            margin-left: 15px;
+        }
+    }
+    p{
+        font-size: 14px;
+        line-height: 24px;
+        margin-bottom: 14px;
+    }
+    .c-btn__black{
+        margin-top: 285px;
+        font-size: 16px;
+        line-height: 19px;
+        padding: 15px 20px 14px;
+    }
+}

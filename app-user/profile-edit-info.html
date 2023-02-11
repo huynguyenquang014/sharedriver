@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="jp">
+
+<head>
+    <meta charset="UTF-8">
+    <title>ShareDriver</title>
+    <meta name="format-detection" content="telephone=no" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <link rel="icon" href="./../assets/img/driver/common/favicon.ico">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./../assets/css/slick.css">
+    <link href="./../assets/css/style.css" rel="stylesheet">
+</head>
+
+<body>
+    <!-- Header -->
+    <header class="l-header">
+        <div class="l-container">
+            <div class="l-row">
+                <div class="l-col">
+                    <a href="#" class="l-header__menu">
+                        <img src="./../assets/img/driver/common/icn_menu.svg" alt="">
+                    </a>
+                </div>
+                <div class="l-col-auto">
+                    <a href="#" class="l-header__noti">
+                        <img src="./../assets/img/driver/common/icn_bell.svg" alt="">
+                    </a>
+                    <a href="#" class="l-header__user">
+                        <img src="./../assets/img/driver/common/icn_user.svg" alt="">
+                    </a>
+                </div>
+            </div>
+        </div>
+    </header>
+    <!-- End header -->
+
+    <section class="p-u-profile-edit-info">
+        <div class="l-container">
+            <div class="p-u-profile-edit-info__inner">
+                <div class="p-u-profile-edit-info__top">
+                    <a href="./profile.html" class="p-u-profile-edit-info__btn-back">
+                        <img src="./../assets/img/driver/common/icn_back.svg" alt="">
+                        <span>個人情報</span>
+                    </a>
+                </div>
+
+                <form action="" class="c-form">
+                    <div class="p-u-profile-edit-info__avatar-upload">
+                        <div class="p-u-profile-edit-info__avatar-upload__box">
+                            <div class="p-u-profile-edit-info__avatar-edit">
+                                <input type="file" id="imageUpload" accept=".png, .jpg, .jpeg">
+                                <label for="imageUpload">
+                                    <img src="./../assets/img/driver/common/icn_camera.svg" alt="">
+                                </label>
+                            </div>
+                            <div class="p-u-profile-edit-info__avatar-preview">
+                                <img src="./../assets/img/driver/common/icn_user_big.svg" alt="">
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="c-form__form-group">
+                        <div class="l-row">
+                            <div class="l-col-6">
+                                <h5 class="c-form__label">［姓］</h5>
+                                <input type="text" placeholder="前田">
+                            </div>
+                            <div class="l-col-6">
+                                <h5 class="c-form__label">［名］</h5>
+                                <input type="text" placeholder="太郎">
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="c-form__form-group">
+                        <h5 class="c-form__label">フリガナ</h5>
+                        <div class="l-row">
+                            <div class="l-col-6">
+                                <h5 class="c-form__label-small">［セイ］</h5>
+                                <input type="text" placeholder="前田">
+                            </div>
+                            <div class="l-col-6">
+                                <h5 class="c-form__label-small">［メイ］</h5>
+                                <input type="text" placeholder="太郎">
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="c-form__form-group">
+                        <h5 class="c-form__label">性別</h5>
+                        <div class="l-row">
+                            <div class="l-col-6">
+                                <div class="c-form__checkbox">
+                                    <input type="checkbox" id="男性" checked>
+                                    <label for="男性">男性</label>
+                                </div>
+                            </div>
+                            <div class="l-col-6">
+                                <div class="c-form__checkbox">
+                                    <input type="checkbox" id="女子">
+                                    <label for="女子">女子</label>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="c-form__form-group">
+                        <h5 class="c-form__label">電話番号</h5>
+                        <input type="text" placeholder="0934 523 571">
+                    </div>
+
+                    <div class="p-u-profile-edit-info__btn-continue">
+                        <button>保存</button>
+                        <a href="#" class="c-btn-white">
+                            <span>修正</span>
+                        </a>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="l-footer">
+
+    </footer>
+    <!-- End footer -->
+
+    <!-- Javascript -->
+    <script src="./../assets/js/jquery.min.js"></script>
+    <script src="./../assets/js/jquery-ui.min.js"></script>
+    <script src="./../assets/js/slick.min.js"></script>
+    <script src="./../assets/js/common.js"></script>
+</body>
+
+</html>

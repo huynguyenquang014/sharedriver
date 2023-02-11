@@ -1,0 +1,83 @@
+.p-booking-top {
+    &__inner{
+        margin-top: 70px;
+        margin-bottom: 30px;
+    }
+    &__logo {
+        text-align: center;
+        display: flex;
+        justify-content: center;
+    }
+    &__group-btn {
+        margin-top: 0;
+        &__image {
+            width: 32px;
+            text-align: left;
+        }
+        ul {
+            li {
+                margin-bottom: 18px;
+                + li {
+                    text-align: center;
+                    margin-bottom: 18px;
+                }
+                .handle-btn {
+                    width: 100%;
+                    max-width: 100%;
+                    border: 1px solid #212121;
+                    border-radius: 4px;
+                    text-align: left;
+                    background: url('../img/user/dashboard/icn_next.svg') no-repeat center;
+                    background-position-x: calc(100% - 18px);
+                    padding: 10px;
+                    font-size: 18px;
+                    line-height: 22px;
+                    position: relative;
+                    &.add {
+                        text-align: center;
+                        img {
+                            width: 12px;
+                        }
+                        span {
+                            position: relative;
+                            font-weight: 500;
+                            font-size: 16px;
+                            line-height: 19px;
+                            &::before {
+                                content: url('../img/user/dashboard/icn_btn-add.svg');
+                                position: absolute;
+                                top: 50%;
+                                transform: translateY(-50%);
+                                left: -25px;
+                            }
+                        }
+                    }
+                }
+                &:last-of-type {
+                    .handle-btn.add {
+                        padding: 12px;
+                        background: none;
+                    }
+                }
+            }
+        }
+        &__logout {
+            margin-top: 48px;
+            text-align: center;
+            a {
+                border: 1px solid #ACACAC;
+                border-radius: 12px;
+                max-width: 100%;
+                padding: 8.5px 20px 8.5px 25px;
+                margin-top: 0;
+                display: inline-flex;
+                align-items: center;
+                line-height: 19px;
+                img {
+                    width: 20px;
+                    margin-right: 10px;
+                }
+            }
+        }
+    }
+}

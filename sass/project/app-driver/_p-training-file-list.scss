@@ -1,0 +1,38 @@
+.p-training-file-list{
+    &__inner{
+        margin-top: 27px;
+        margin-bottom: 30px;
+    }
+    &__title{
+        font-weight: 700;
+        font-size: 18px;
+        line-height: 22px;
+        margin-bottom: 25px;
+    }
+    ul{
+        li{
+            margin-bottom: 8px;
+            a{
+                display: flex;
+                align-items: center;
+                border: 1px solid #D9D9D9;
+                border-radius: 4px;
+                padding: 11px 12px;
+            }
+        }
+    }
+    &__icon{
+        margin-right: 15px;
+    }
+    &__name{
+        font-size: 12px;
+        line-height: 16px;
+        color: #006C98;
+        margin-bottom: 4px;
+    }
+    &__link{
+        font-size: 12px;
+        line-height: 16px;
+        color: #8A8A8A;
+    }
+}

@@ -1,0 +1,258 @@
+.p-u-confirm-credit-card {
+    margin-top: -7px;
+    .l-container {
+        padding-left: 25px;
+        padding-right: 25px;
+        position: relative;
+    }
+    &__header-main {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        position: relative;
+        a {
+            position: absolute;
+            left: 0;
+            top: 4px;
+        }
+        span {
+            font-weight: 700;
+            font-size: 20px;
+            line-height: 24px;
+            font-family: 'Zen Kaku Gothic New';
+            font-style: normal;
+            text-align: center;
+        }
+    }
+    &__content {
+        margin-top: 23px;
+        &__group-btn {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            &__item {
+                .c-btn-white {
+                    width: 57px;
+                    height: 38px;
+                    margin-bottom: 0;
+                    span {
+                        white-space: nowrap;
+                        font-weight: 500;
+                        font-size: 14px;
+                        line-height: 24px;
+                        font-family: 'Zen Kaku Gothic New';
+                        font-style: normal;
+                    }
+                    &.delete {
+                        margin-left: 5px;
+                        border: 1px solid #BDC3C7;
+                        span {
+                            color: #A1A1A1;
+                        }
+                    }
+                }
+            }
+        }
+        h3 {
+            font-family: 'Zen Kaku Gothic New';
+            font-style: normal;
+            font-weight: 500;
+            font-size: 16px;
+            line-height: 16px;
+        }
+        &__card {
+            margin-top: 10px;
+            border: 1px solid #121212;
+            border-radius: 8px;
+            padding: 26px 12px 27px;
+            min-width: 327px;
+            p {
+                b {
+                    color: #121212;
+                    font-family: 'Zen Kaku Gothic New';
+                    font-style: normal;
+                    font-weight: 500;
+                    font-size: 14px;
+                    line-height: 24px;
+                    display: inline-block;
+                    width: 140px;
+                    max-width: 100%;
+                }
+                span {
+                    font-family: 'Zen Kaku Gothic New';
+                    font-style: normal;
+                    font-weight: 400;
+                    font-size: 16px;
+                    line-height: 24px;
+                    color: #34495E;
+                }
+                &+p {
+                    margin-top: 25px;
+                }
+            }
+        }
+        &__add-card {
+            margin-top: -9px;
+            a {
+                display: flex;
+                align-items: center;
+                justify-content: end;
+                span {
+                    font-family: 'Zen Kaku Gothic New';
+                    font-style: normal;
+                    font-weight: 500;
+                    font-size: 16px;
+                    line-height: 24px;
+                    color: #121212;
+                    margin-left: 4px;
+                }
+            }
+        }
+        &__useds {
+            margin-top: 18px;
+            .desc {
+                font-family: 'Zen Kaku Gothic New';
+                font-style: normal;
+                font-weight: 400;
+                font-size: 12px;
+                line-height: 24px;
+                color: #2C3E50;
+            }
+            .item {
+                margin-top: 13px;
+                span {
+                    font-family: 'Zen Kaku Gothic New';
+                    font-style: normal;
+                    font-weight: 700;
+                    font-size: 12px;
+                    line-height: 24px;
+                    color: #2C3E50;
+                    margin-left: 6px;
+                }
+                &+.item {
+                    margin-top: 4px;
+                }
+            }
+            .warring {
+                font-family: 'Zen Kaku Gothic New';
+                font-style: normal;
+                font-weight: 400;
+                font-size: 12px;
+                line-height: 24px;
+                color: #2C3E50;
+                margin-top: 11px;
+            }
+        }
+        &__box {
+            margin-bottom: 27px;
+        }
+    }
+    &__popup {
+        position: fixed;
+        width: 100%;
+        height: 100%;
+        top: 0;
+        left: 0;
+        background: rgba($color: #000000, $alpha: 0.54);
+        z-index: 100;
+        &__inner {
+            border-radius: 6px;
+            background: #FFFFFF;
+            position: fixed;
+            top: calc(50% - 21px);
+            left: 50%;
+            transform: translate(-50%, -50%);
+            z-index: 1000;
+            width: 797px;
+            max-width: calc(100% - 78px);
+        }
+        &__content {
+            padding: 19px 9px 15px;
+            min-height: 140px;
+            h5 {
+                text-align: center;
+                font-size: 16px;
+                line-height: 24px;
+                font-weight: 500;
+                font-family: 'Zen Kaku Gothic New';
+                font-style: normal;
+                position: relative;
+                padding-bottom: 8px;
+                &::after {
+                    content: '';
+                    position: absolute;
+                    bottom: 0;
+                    width: calc(100% - 72px);
+                    left: 50%;
+                    height: 0.5px;
+                    background: #BDC3C7;
+                    transform: translateX(-50%);
+                }
+            }
+            .desc {
+                font-family: 'Zen Kaku Gothic New';
+                font-style: normal;
+                padding: 0 5px;
+                margin-top: 12px;
+                &+.desc {
+                    margin-top: 0;
+                }
+                b {
+                    font-weight: 500;
+                    font-size: 12px;
+                    line-height: 24px;
+                    display: inline-block;
+                    width: 139px;
+                    max-width: 100%;
+                }
+                span {
+                    font-weight: 400;
+                    font-size: 12px;
+                    line-height: 24px;
+                    color: #2C3E50;
+                }
+            }
+        }
+        &__group-btn {
+            margin-top: 24px;
+            margin-bottom: 11px;
+            display: flex;
+            width: calc(100%);
+            gap: 16px;
+            justify-content: center;
+            .c-btn-white {
+                width: calc(50% - 21.5px);
+                border-radius: 4px;
+                height: 40px;
+                span {
+                    line-height: 19px;
+                    font-size: 16px;
+                    font-family: 'Zen Kaku Gothic New';
+                    font-style: normal;
+                    white-space: nowrap;
+                }
+            }
+            .c-btn-black {
+                width: calc(50% - 21.5px);
+                height: 40px;
+                border-radius: 4px;
+                span {
+                    font-family: 'Zen Kaku Gothic New';
+                    font-style: normal;
+                    line-height: 16px;
+                }
+            }
+        }
+    }
+    #popupDelete {
+        .p-u-confirm-credit-card__popup__content {
+            min-height: 184px;
+            h5 {
+                margin-top: 25px;
+                &::after {
+                    bottom: -7px;
+                }
+            }
+        }
+    }
+}

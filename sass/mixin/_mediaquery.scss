@@ -1,0 +1,37 @@
+@charset "utf-8";
+
+// ----------------------------------------------------------------------
+// MediaQuery
+// ----------------------------------------------------------------------
+
+
+@mixin brSmallPc {
+	// Small PC
+	@media ( max-width: ($width-small-pc + $width-scrollbar)) {
+		@content;
+	}
+}
+
+
+@mixin brTablet {
+	// Tablet
+	@media ( max-width: ($width-tablet + $width-scrollbar)) {
+		@content;
+	}
+}
+
+
+@mixin brSpLandscape {
+	// SP Landscape
+	@media  ( max-width: ($width-sp-landscape + $width-scrollbar)) {
+		@content;
+	}
+}
+
+
+@mixin brSpPortrait {
+	// SP Portrait
+	@media ( max-width: ($width-sp-portrait + $width-scrollbar)) {
+		@content;
+	}
+}

@@ -1,0 +1,41 @@
+.l-header-top{
+    padding: 15px 0;
+    background-color: transparent;
+    position: relative;
+    z-index: 2;
+    .l-row{
+        align-items: center;
+    }
+    &__col-left{
+        display: flex;
+        align-items: center;
+        @include brSpLandscape{
+            flex: 100%;
+            max-width: 100%;
+            flex-direction: column;
+            margin-bottom: 10px;
+        }
+    }
+    &__col-right{
+        text-align: right;
+        @include brSpLandscape{
+            flex: 100%;
+            max-width: 100%;
+        }
+    }
+    &__logo{
+        margin-right: 15px;
+        @include brSpLandscape{
+            margin-right: 0;
+        }
+    }
+    &__customer-login{
+        display: inline-flex;
+        align-items: center;
+    }
+    &__driver-login{
+        display: inline-flex;
+        align-items: center;
+        margin-left: 20px;
+    }
+}

@@ -1,0 +1,56 @@
+.p-training-tutorial{
+    &__inner{
+        margin-top: 24px;
+        margin-bottom: 30px;
+    }
+    &__title{
+        font-weight: 700;
+        font-size: 18px;
+        line-height: 22px;
+        margin-bottom: 20px;
+    }
+    form{
+        .form-group {
+            display: block;
+            margin-bottom: 12px;
+            background: #D9D9D9;
+            padding: 15px 8px 14px 13px;
+            input {
+                padding: 0;
+                height: initial;
+                width: initial;
+                margin-bottom: 0;
+                display: none;
+                cursor: pointer;
+                &:checked {
+                    + {
+                        label {
+                            &::before{
+                                content: url("../img/driver/common/icn_circle_checked.png")
+                            }
+                        }
+                    }
+                }
+            }
+            label {
+                display: block;
+                position: relative;
+                cursor: pointer;
+                font-weight: 400;
+                font-size: 12px;
+                line-height: 15px;
+                &:before {
+                    content: url("../img/driver/common/icn_circle.png");
+                    display: block;
+                    width: 16px;
+                    height: 16px;
+                    position: absolute;
+                    right: 0;
+                    top: 50%;
+                    transform: translateY(-50%);
+                }
+            }
+        }
+        
+    }
+}

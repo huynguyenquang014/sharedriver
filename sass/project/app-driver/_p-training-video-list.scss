@@ -1,0 +1,153 @@
+.p-training-video-list{
+    &__inner{
+        margin-top: 26px;
+        margin-bottom: 30px;
+    }
+    &__top{
+        display: flex;
+        align-items: center;
+        margin-bottom: 14px;
+    }
+    .l-row{
+        margin-left: -5px;
+        margin-right: -5px;
+        .l-col{
+            flex: 50%;
+            max-width: 50%;
+            padding-left: 5px;
+            padding-right: 5px;
+            margin-bottom: 24px;
+        }
+    }
+    &__title{
+        font-weight: 600;
+        font-size: 14px;
+        line-height: 17px;
+        margin-bottom: 16px;
+    }
+
+    &__btn-complete{
+        display: flex;
+        justify-content: center;
+        margin-top: 14px;
+        a{
+            font-size: 12px;
+            line-height: 15px;
+            color: #fff;
+            background-color: #000;
+            padding: 12px 41px;
+        }
+    }
+    &__video-name{
+        font-size: 12px;
+        line-height: 15px;
+        text-align: center;
+        margin-top: 12px;
+    }
+    
+
+    .custom-video-area {
+        position: relative;
+        overflow: hidden;
+        width: 100%;
+        max-width: 72em;
+        height: 0;
+        margin: auto;
+        padding-bottom: 56.25%;
+        text-align: left;
+        
+        video {
+            position: absolute;
+            top: 0;
+            right: -50%;
+            bottom: 0;
+            left: -50%;
+            min-width: 100%;
+            width: 100%;
+            min-height: 100%;
+            margin: auto;
+        }
+    }
+
+    .video-controls {
+        position: absolute;
+        z-index: 10;
+        right: 0;
+        bottom: 0 !important;
+        left: 0;
+        width: 100%;
+        margin: auto;
+        transition: all 0.4s ease-in-out;
+        &.playing {
+            .play-button {
+                .icon-play{
+                    display: none;
+                }
+                .icon-pause{
+                    display: flex;
+                }
+            }
+        }
+        .top-wrapper {
+            display: block;
+        }
+        .bottom-wrapper {
+            padding: 8px 6px;
+            display: flex;
+            align-items: center;
+            justify-content: space-around;
+        }
+        .progress-bar {
+            position: relative;
+            overflow: hidden;
+            width: 100%;
+            height: 2px;
+            margin-bottom: 0;
+            cursor: pointer;
+            background: #fff;
+            margin-left: 0;
+            span {
+                position: absolute;
+                top: 0;
+                left: 0;
+                display: block;
+                width: 0;
+                height: 100%;
+            }
+            .time-bar {
+                z-index: 10;
+                background: #ccc;
+            }
+            .buffer-bar {
+                z-index: 5;
+                
+            }
+        }
+        .play-button {
+            display: flex;
+            width: 21px;
+            cursor: pointer;
+            .icon-play{
+                display: flex;
+                img{
+                    width: 12px;
+                }
+            }
+            .icon-pause{
+                display: none;
+                img{
+                    width: 8px;
+                }
+            }
+        }
+        .time {
+            display: flex;
+            width: 43px;
+            justify-content: flex-end;
+            vertical-align: middle;
+            color: #fff;
+            font-size: 10px;
+            line-height: 12px;
+        }
+    }
+}

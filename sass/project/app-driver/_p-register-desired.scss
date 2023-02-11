@@ -1,0 +1,52 @@
+.p-register-desired{
+    &__inner{
+        margin-top: 24px;
+    }
+    &__search{
+        display: flex;
+        margin-bottom: 15px;
+        input{
+            font-size: 16px;
+            line-height: 19px;
+            color: #7C7C7C;
+            &::placeholder{
+                color: inherit;
+            }
+        }
+        button{
+            font-size: 16px;
+            line-height: 19px;
+            text-align: center;
+            color: #FFFFFF;
+            background: #121212;
+            height: 44px;
+            padding: 0 35px;
+            white-space: nowrap;
+            margin-left: 8px;
+        }
+    }
+    &__list-checkbox{
+        ul{
+            li{
+                margin-bottom: 20px;
+            }
+        }
+    }
+    .c-form{
+        &__checkbox{
+            input:checked + label:after{
+                content: url("../img/driver/common/icn_check_big.svg");
+                top: 2px;
+                left: 4px;
+            }
+            label{
+                font-size: 16px;
+                line-height: 19px;
+                &::before{
+                    padding: 7.35px;
+                    margin-right: 26px;
+                }
+            }
+        }
+    }
+}

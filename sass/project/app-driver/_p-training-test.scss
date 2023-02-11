@@ -1,0 +1,58 @@
+.p-training-test{
+    &__inner{
+        margin-top: 32px;
+        margin-bottom: 30px;
+    }
+    &__btn-return{
+        display: inline-flex;
+        align-items: center;
+        font-weight: 700;
+        font-size: 16px;
+        line-height: 19px;
+        margin-bottom: 26px;
+        span{
+            margin-left: 15px;
+        }
+    }
+    &__list{
+
+    }
+    &__question{
+        margin-bottom: 16px;
+        h3{
+            font-weight: 700;
+            font-size: 12px;
+            line-height: 15px;
+            margin-bottom: 5px;
+        }
+        p{
+            font-size: 12px;
+            line-height: 16px;
+        }
+    }
+    &__group-btn{
+        display: flex;
+        justify-content: flex-end;
+        margin-top: 7px;
+        a{
+            font-size: 12px;
+            line-height: 15px;
+            border: 1px solid #000;
+            padding: 10px 10px 9px;
+            margin-left: 8px;
+            width: 98px;
+            text-align: center;
+        }
+    }
+    &__btn-send{
+        font-weight: 700;
+        font-size: 16px;
+        line-height: 19px;
+        color: #FFFFFF;
+        background: #121212;
+        text-align: center;
+        padding: 19px 20px 18px;
+        width: 100%;
+        margin-top: 14px;
+    }
+}

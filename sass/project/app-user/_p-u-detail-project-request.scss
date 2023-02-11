@@ -1,0 +1,97 @@
+.p-u-detail-project-request {
+    h3 {
+        font-weight: 600;
+        font-size: 16px;
+        line-height: 19px;
+        margin-bottom: 8px;
+    }
+    select {
+        background-position-x: calc(100% - 18px);
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 17px;
+        text-overflow: ellipsis;
+    }
+    &__fare,
+    &__displacement,
+    &__car,
+    &__inspection,
+    &__handle {
+        margin-top: 15px;
+        select {
+            font-weight: 400;
+            font-size: 16px;
+            line-height: 19px;
+            color: #999999;
+            option {
+                font-weight: 400;
+                font-size: 16px;
+                line-height: 19px;
+            }
+        }
+    }
+    &__car {
+        select {
+            font-size: 13px;
+            line-height: 16px;
+        }
+    }
+    &__handle {
+        h3 {
+            font-weight: 700;
+            font-size: 14px;
+            line-height: 17px;
+        }
+    }
+    &__confirm {
+        margin: 45px 0 19px 9px;
+        input {
+            padding: 0;
+            height: initial;
+            width: initial;
+            margin-bottom: 0;
+            display: none;
+        }
+        label {
+            position: relative;
+            font-weight: 500;
+            font-size: 16px;
+            line-height: 19px;
+        }
+        label:before {
+            content: '';
+            -webkit-appearance: none;
+            background-color: transparent;
+            border: 2px solid #000;
+            box-shadow: 0 1px 2px rgba(0, 0, 0, 0.05), inset 0px -15px 10px -12px rgba(0, 0, 0, 0.05);
+            padding: 5px;
+            display: inline-block;
+            position: relative;
+            vertical-align: middle;
+            margin-right: 13px;
+        }
+        input:checked+label:after {
+            content: "";
+            display: block;
+            position: absolute;
+            top: 7px;
+            left: 5px;
+            width: 3px;
+            height: 5px;
+            border: solid #000;
+            border-width: 0 2px 2px 0;
+            transform: rotate(45deg);
+        }
+    }
+    &__group-btn {
+        margin-top: 48px;
+        .c-btn-black,
+        .c-btn-white {
+            width: 100%;
+            margin-bottom: 0;
+        }
+        .c-btn-white {
+            border: none;
+        }
+    }
+}

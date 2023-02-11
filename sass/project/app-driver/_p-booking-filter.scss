@@ -1,0 +1,76 @@
+.p-booking-filter {
+    &__header-main {
+        &__inner {
+            margin-bottom: 10px;
+            a {
+                display: inline-flex;
+                align-items: center;
+                span {
+                    line-height: 19px;
+                    font-weight: 700;
+                    margin-left: 13px;
+                }
+            }
+        }
+    }
+    &__content {
+        margin-top: 23px;
+        &__group {
+            h3 {
+                font-weight: 700;
+                font-size: 14px;
+                line-height: 17px;
+                margin-bottom: 12px;
+                margin-top: 19px;
+            }
+            select {
+                width: 100%;
+                color: #999999;
+                font-size: 14px;
+                line-height: 17px;
+                appearance: none;
+                background: url('../img/user/search/icon_select.svg') center no-repeat;
+                background-position-x: calc(100% - 19px);
+                position: relative;
+                &:focus-visible {
+                    outline: none;
+                }
+                &__selects {
+                    display: flex;
+                }
+            }
+            &__selects {
+                display: flex;
+                gap: 23px;
+            }
+            &__item {
+                width: 50%;
+                p {
+                    font-weight: 500;
+                    font-size: 14px;
+                    line-height: 17px;
+                    margin-bottom: 8px;
+                }
+            }
+        }
+        &__group-handle {
+            position: absolute;
+            bottom: 0;
+            left: 50%;
+            transform: translate(-50%);
+            .c-btn-black {
+                margin-bottom: -2px;
+                display: block;
+                margin-left: auto;
+                margin-right: auto;
+            }
+            .c-btn-white {
+                margin-bottom: 5px;
+                border: none;
+                span {
+                    font-weight: 500;
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,161 @@
+.p-notification{
+    &--delete{
+        .p-notification{
+            &__btn-delete{
+                display: none;
+            }
+            &__top__btn-select-all{
+                display: block !important;
+            }
+            &__item input + label::before{
+                opacity: 1;
+                visibility: visible;
+            }
+            &__group-btn{
+                display: block;
+            }
+        }
+    }
+    &__inner{
+        margin-top: 24px;
+        margin-bottom: 30px;
+    }
+    &__top{
+        height: 24px;
+        display: flex;
+        justify-content: space-between;
+        margin-bottom: 20px;
+        h3{
+            font-weight: 700;
+            font-size: 18px;
+            line-height: 22px;
+        }
+        a{
+            display: flex;
+        }
+        &__btn-select-all{
+            position: relative;
+            display: none !important;
+            input{
+                position: absolute;
+                &:checked + label:before{
+                    content: url("../img/driver/common/icn_checked_bg.svg");
+                    display: block;
+                    position: absolute;
+                    padding: 0;
+                    border: none;
+                }
+                + label::before{
+                    content: "";
+                    appearance: none;
+                    background-color: transparent;
+                    padding: 8px;
+                    display: inline-block;
+                    cursor: pointer;
+                    border-radius: 50%;
+                    border: 2px solid #C1BFBF;
+                    position: absolute;
+                    top: -2px;
+                    left: -35px;
+                }
+            }
+            label{
+                font-weight: 500;
+                font-size: 14px;
+                line-height: 17px;
+                position: relative;
+                cursor: pointer;
+            }
+        }
+    }
+    &__item{
+        margin-bottom: 12px;
+        input{
+            position: absolute;
+            &:checked + label:before{
+                content: url("../img/driver/common/icn_checked_bg.svg");
+                display: block;
+                position: absolute;
+                padding: 0;
+                border: none;
+            }
+            + label::before{
+                content: "";
+                -webkit-appearance: none;
+                -moz-appearance: none;
+                appearance: none;
+                background-color: transparent;
+                padding: 8px;
+                display: inline-block;
+                cursor: pointer;
+                border-radius: 50%;
+                border: 2px solid #C1BFBF;
+                position: absolute;
+                top: 13px;
+                right: 14px;
+                opacity: 0;
+                visibility: hidden;
+            }
+        }
+        label{
+            display: flex;
+            position: relative;
+            border: 1px solid #BDBDBD;
+            border-radius: 4px;
+            padding: 11px 12px 32px;
+            cursor: pointer;
+        }
+        &__img{
+            margin-right: 12px;
+            flex: 46px;
+            max-width: 46px;
+            padding-top: 9px;
+            img{
+                width: 46px;
+                height: 46px;
+                border-radius: 50%;
+                object-fit: cover;
+            }
+        }
+        &__info{
+            flex: calc(100% - 58px);
+            max-width: calc(100% - 58px);
+            h4{
+                font-weight: 700;
+                font-size: 16px;
+                line-height: 19px;
+                margin-bottom: 4px;
+            }
+            p{
+                font-weight: 400;
+                font-size: 14px;
+                line-height: 20px;
+                color: #202020;
+            }
+        }
+        &__date{
+            position: absolute;
+            bottom: 11px;
+            right: 12px;
+            font-size: 14px;
+            line-height: 17px;
+            z-index: 1;
+        }
+    }
+    &__group-btn{
+        margin-top: 78px;
+        text-align: center;
+        display: none;
+        button{
+            margin-bottom: 10px;
+            padding: 15px 20px 14px;
+        }
+        a{
+            font-weight: 500;
+            font-size: 14px;
+            line-height: 17px;
+            text-align: center;
+            color: #696969;
+        }
+    }
+}

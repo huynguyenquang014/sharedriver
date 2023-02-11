@@ -1,0 +1,35 @@
+.l-footer-top{
+    margin-top: 100px;
+    border-top: 1px solid #000;
+    padding-top: 100px;
+    &__main{
+        margin-bottom: 70px;
+    }
+    &__logo{
+        display: block;
+        margin-bottom: 30px;
+        text-align: center;
+    }
+    &__col{
+        flex: 25%;
+        max-width: 25%;
+        padding-left: 15px;
+        padding-right: 15px;
+        @include brSpLandscape{
+            flex: 50%;
+            max-width: 50%;
+            margin-bottom: 30px;
+        }
+    }
+    &__title{
+        font-size: 20px;
+        margin-bottom: 10px;
+    }
+    &__copyright{
+        border-top: 1px solid #000;
+        p{
+            text-align: center;
+            padding: 15px;
+        }
+    }
+}

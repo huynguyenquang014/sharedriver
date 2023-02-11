@@ -1,0 +1,154 @@
+.p-booking-history {
+    &__header-main {
+        &__inner {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding-bottom: 16px;
+            h3 {
+                font-size: 18px;
+                line-height: 22px;
+            }
+            a{
+                display: flex;
+            }
+        }
+    }
+    &__steps {
+        ul {
+            display: flex;
+            flex-wrap: wrap;
+            align-items: center;
+            li {
+                padding-right: 25px;
+                margin-bottom: 5px;
+                a {
+                    font-weight: 700;
+                    line-height: 19px;
+                }
+                a.active {
+                    border-bottom: 3px solid $cBase;
+                }
+                &:last-of-type {
+                    padding-right: 0;
+                }
+            }
+        }
+    }
+    &__content {
+        margin-top: 20px;
+        ul {
+            li {
+                margin-bottom: 12px;
+            }
+        }
+    }
+    &__box {
+        border: 1px solid #E2E2E2;
+        border-radius: 4px;
+        padding: 12px;
+        position: relative;
+        &__title {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            margin-bottom: 12px;
+            h3 {
+                font-weight: 700;
+                font-size: 16px;
+                line-height: 19px;
+            }
+        }
+        &__status {
+            display: inline-flex;
+            align-items: center;
+            span {
+                width: 10px;
+                height: 10px;
+                background: #F7FC0E;
+                border-radius: 50%;
+                display: inline-block;
+                margin-right: 8px;
+            }
+            strong {
+                font-weight: 400;
+                font-size: 14px;
+                line-height: 17px;
+            }
+            &--red {
+                span {
+                    background: #E41C1C;
+                }
+            }
+            &--green {
+                span {
+                    background: #3ED15E;
+                }
+            }
+            &--violet {
+                span {
+                    background: #3E4DD1;
+                }
+            }
+        }
+        &__desc {
+            font-size: 14px;
+            line-height: 17px;
+            margin-bottom: 12px;
+            padding-right: 50px;
+            span {
+                margin-left: 3px;
+            }
+        }
+        &__map {
+            font-size: 14px;
+            line-height: 17px;
+            margin-bottom: -2px;
+            width: 60%;
+        }
+        &__group-btn{
+            display: flex;
+            gap: 15px;
+        }
+        &__btn-waiting {
+            width: 100%;
+            border: 1px solid #E41C1C;
+            background-color: #E41C1C;
+            color: #fff;
+            text-align: center;
+            margin-top: 35px;
+            padding: 11px;
+            margin-top: 21px;
+            margin-bottom: -2px;
+            span {
+                font-weight: 700;
+                line-height: 19px;
+            }
+        }
+        &__btn-cancel {
+            width: 100%;
+            border: 1px solid #4A4A4A;
+            text-align: center;
+            margin-top: 35px;
+            padding: 11px;
+            margin-top: 21px;
+            margin-bottom: -2px;
+            span {
+                font-weight: 700;
+                line-height: 19px;
+            }
+        }
+        &__image-error {
+            position: absolute;
+            right: 12px;
+            top: 38px;
+        }
+        &__price {
+            position: absolute;
+            right: 12px;
+            line-height: 19px;
+            font-weight: 500;
+            top: 69px;
+        }
+    }
+}

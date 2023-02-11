@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="jp">
+
+<head>
+    <meta charset="UTF-8">
+    <title>ShareDriver</title>
+    <meta name="format-detection" content="telephone=no" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./../assets/css/slick.css">
+    <link href="./../assets/css/style.css" rel="stylesheet">
+    <link rel="stylesheet" href="./../assets/css/jquery-ui.min.css">
+</head>
+
+<body>
+    <!-- Header -->
+    <header class="l-header">
+        <div class="l-container">
+            <div class="l-row">
+                <div class="l-col">
+                    <a href="#" class="l-header__menu">
+                        <img src="./../assets/img/driver/common/icn_menu.svg" alt="">
+                    </a>
+                </div>
+                <div class="l-col-auto">
+                    <a href="#" class="l-header__noti">
+                        <img src="./../assets/img/driver/common/icn_bell.svg" alt="">
+                    </a>
+                    <a href="#" class="l-header__user">
+                        <img src="./../assets/img/driver/common/icn_user.svg" alt="">
+                    </a>
+                </div>
+            </div>
+        </div>
+    </header>
+    <!-- End header -->
+
+    <!---main-->
+    <main>
+        <div class="p-project-search">
+            <div class="p-project-search__content">
+                <div class="l-container">
+                    <form action="">
+                        <h2 class="p-project-search__title">案件検索</h2>
+                        <div class="p-project-search__content__infos">
+                            <h3>お客様名</h3>
+                            <input type="text" value="前田太郎">
+                        </div>
+                        <div class="p-project-search__content__name">
+                            <h3>電話番号</h3>
+                            <input type="text" value="0395646438">
+                        </div>
+
+                        <div class="p-project-search__content__time">
+                            <h3>時間</h3>
+                            <div class="p-project-search__content__time__item">
+                                <div>
+                                    <p>開始日時</p>
+                                    <input type="datetime-local" name="" id="">
+                                </div>
+                                <div>
+                                    <p>終了日時</p>
+                                    <input type="datetime-local" name="" id="">
+                                </div>
+                            </div>
+                        </div>
+    
+                        <div class="p-project-search__content__passengers">
+                            <h3>乗員数</h3>
+                            <input type="text" value="4">
+                        </div>
+    
+                        <div class="p-project-search__content__section">
+                            <h3>住所</h3>
+                            <select name="" id="">
+                                <option value="">会社/自宅/その他</option>
+                            </select>
+                            <div class="l-row">
+                                <div class="l-col">
+                                    <h4>都道府県</h4>
+                                    <select name="" id="">
+                                        <option value="">千葉</option>
+                                    </select>
+                                </div>
+                                <div class="l-col">
+                                    <h4>郡市区</h4>
+                                    <select name="" id="">
+                                        <option value="">成田</option>
+                                    </select>
+                                </div>
+                            </div>
+    
+                            <div class="l-row">
+                                <div class="l-col">
+                                    <h4>町村・番地</h4>
+                                    <select name="" id="">
+                                        <option value="">三里塚</option>
+                                    </select>
+                                </div>
+                                <div class="l-col">
+                                    <h4>建物名・部屋番号</h4>
+                                    <input type="text" value="15-2">
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="p-project-search__content__section">
+                            <h3>車種</h3>
+                            <input type="text" placeholder="2t/4t/10t/10人乗り/11人乗り以上/けん引/特殊車両">
+                        </div>
+    
+                        <div class="p-project-search__content__section">
+                            <h3>ハンドル位置</h3>
+                            <input type="text" placeholder="左側/右側">
+                        </div>
+    
+                        <div class="p-project-search__btn-search">
+                            <button>検索</button>
+                        </div>
+                    </form>
+                </div>
+                <div class="p-project-search__table">
+                    <table>
+                        <thead>
+                            <th class="p-project-search__table__id">
+                                <div class="checkbox">
+                                    <input type="checkbox" id="selectall">
+                                    <label for="selectall">No</label>
+                                </div>
+                            </th>
+                            <th class="p-project-search__table__customer">お客様名</th>
+                            <th>ルート</th>
+                            <th>日付</th>
+                            <th>金額</th>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>
+                                    <div class="checkbox">
+                                        <input type="checkbox" class="selectedId" id="no1">
+                                        <label for="no1">1</label>
+                                    </div>
+                                </td>
+                                <td>前田太郎</td>
+                                <td>東京-千葉</td>
+                                <td>20/04/2022</td>
+                                <td>70,000 円</td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <div class="checkbox">
+                                        <input type="checkbox" class="selectedId" id="no2">
+                                        <label for="no2">2</label>
+                                    </div>
+                                </td>
+                                <td>前田太郎</td>
+                                <td>東京-千葉</td>
+                                <td>20/04/2022</td>
+                                <td>70,000 円</td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <div class="checkbox">
+                                        <input type="checkbox" class="selectedId" id="no3">
+                                        <label for="no3">3</label>
+                                    </div>
+                                </td>
+                                <td>前田太郎</td>
+                                <td>東京-千葉</td>
+                                <td>20/04/2022</td>
+                                <td>70,000 円</td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <div class="checkbox">
+                                        <input type="checkbox" class="selectedId" id="no4">
+                                        <label for="no4">4</label>
+                                    </div>
+                                </td>
+                                <td>前田太郎</td>
+                                <td>東京-千葉</td>
+                                <td>20/04/2022</td>
+                                <td>70,000 円</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+
+        <!--popup-->
+        <div class="c-popup c-popup--2" id="popup" style="display: none;">
+            <div class="c-popup__inner">
+                <div class="c-popup__content">
+                    <h4>案件希望登録されました。</h4>
+                </div>
+                <div class="c-popup__group-btn">
+                    <a class="c-btn-white yes" onclick="togglePopup()" href="#">
+                        <span>確認</span>
+                    </a>
+                </div>
+            </div>
+        </div>
+        <!--end popup-->
+    </main>
+    <!--end main-->
+    <!-- Javascript -->
+    <script src="./../assets/js/jquery.min.js"></script>
+    <script src="./../assets/js/jquery-ui.min.js"></script>
+    <script src="./../assets/js/slick.min.js"></script>
+    <script src="./../assets/js/common.js"></script>
+</body>
+
+</html>

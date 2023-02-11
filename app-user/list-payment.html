@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html lang="jp">
+
+<head>
+    <meta charset="UTF-8">
+    <title>ShareDriver</title>
+    <meta name="format-detection" content="telephone=no" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./../assets/css/slick.css">
+    <link href="./../assets/css/style.css" rel="stylesheet">
+    <link rel="stylesheet" href="./../assets/css/jquery-ui.min.css">
+</head>
+
+<body>
+    <!-- Header -->
+    <header class="l-header">
+        <div class="l-container">
+            <div class="l-row">
+                <div class="l-col">
+                    <a href="#" class="l-header__menu">
+                        <img src="./../assets/img/driver/common/icn_menu.svg" alt="">
+                    </a>
+                </div>
+                <div class="l-col-auto">
+                    <a href="#" class="l-header__noti">
+                        <img src="./../assets/img/driver/common/icn_bell.svg" alt="">
+                    </a>
+                    <a href="#" class="l-header__user">
+                        <img src="./../assets/img/driver/common/icn_user.svg" alt="">
+                    </a>
+                </div>
+            </div>
+        </div>
+    </header>
+    <!-- End header -->
+
+    <!--Main-->
+    <section class="mt-25">
+        <div class="p-u-list-payment">
+            <div class="l-container">
+                <div class="p-u-list-payment__header-main">
+                    <a href="#">
+                        <img src="./../assets/img/user/common/icn_back.svg" alt="">
+                        <span>決済状況</span>
+                    </a>
+                    <div class="p-u-list-payment__header-main__group-btn">
+                        <input type="checkbox" id="checkAll" onclick="toggle(this)">
+                        <label for="checkAll">全て選択する</label>
+                    </div>
+                </div>
+
+
+                <div class="p-u-list-payment__content">
+
+                    <!--Tabs-->
+                    <ul class="p-u-list-payment__content__tabs" id="tabs">
+                        <li data-tab-target="#unfinished" class="active tabPay">未決済</li>
+                        <li data-tab-target="#finished" class="tabPay">決済済み</li>
+                    </ul>
+                    <!--End tabs-->
+
+                    <!--Unfinished-->
+                    <div id="unfinished" data-tab-content class="active">
+                        <div class="p-u-list-payment__content__card">
+                            <label for="radio-card-1" class="radio-card">
+                                <input type="checkbox" name="radio-card check" id="radio-card-1" />
+                                <div class="card-content-wrapper">
+                                    <span class="check-icon"></span>
+                                    <div class="card-content">
+                                        <p class="desc">
+                                            <strong>口座番号　:</strong>
+                                            <span>9668668656789</span>
+                                        </p>
+                                        <p class="desc">
+                                            <strong>お名義　　:</strong>
+                                            <span>おかかえ運転手株式会社</span>
+                                        </p>
+                                        <p class="desc">
+                                            <strong>金額　　　:</strong>
+                                            <span>70,000 円</span>
+                                        </p>
+                                        <p class="date">
+                                            20時00　24/07/2022
+                                        </p>
+                                    </div>
+                                </div>
+                            </label>
+
+                            <label for="radio-card-2" class="radio-card">
+                                <input type="checkbox" name="radio-card check" id="radio-card-2" />
+                                <div class="card-content-wrapper">
+                                    <span class="check-icon"></span>
+                                    <div class="card-content">
+                                        <p class="desc">
+                                            <strong>口座番号　:</strong>
+                                            <span>9668668656789</span>
+                                        </p>
+                                        <p class="desc">
+                                            <strong>お名義　　:</strong>
+                                            <span>おかかえ運転手株式会社</span>
+                                        </p>
+                                        <p class="desc">
+                                            <strong>金額　　　:</strong>
+                                            <span>70,000 円</span>
+                                        </p>
+                                        <p class="date">
+                                            20時00　24/07/2022
+                                        </p>
+                                    </div>
+                                </div>
+                            </label>
+
+                            <label for="radio-card-3" class="radio-card">
+                                <input type="checkbox" name="radio-card check" id="radio-card-3" />
+                                <div class="card-content-wrapper">
+                                    <span class="check-icon"></span>
+                                    <div class="card-content">
+                                        <p class="desc">
+                                            <strong>口座番号　:</strong>
+                                            <span>9668668656789</span>
+                                        </p>
+                                        <p class="desc">
+                                            <strong>お名義　　:</strong>
+                                            <span>おかかえ運転手株式会社</span>
+                                        </p>
+                                        <p class="desc">
+                                            <strong>金額　　　:</strong>
+                                            <span>70,000 円</span>
+                                        </p>
+                                        <p class="date">
+                                            20時00　24/07/2022
+                                        </p>
+                                    </div>
+                                </div>
+                            </label>
+                            <div class="p-u-list-payment__group-btn">
+                                <a href="./payment.html" class="c-btn-black">
+                                    <span>決済</span>
+                                </a>
+                                <a href="#" class="c-btn-white">
+                                    <span>キャンセル</span>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <!--End unfinished-->
+
+
+                    <!--Finished-->
+                    <div id="finished" data-tab-content class="">
+                        <div class="p-u-list-payment__content__card">
+
+                            <label for="radio-card-1" class="radio-card">
+                                <a href="./detail-list-payment.html">
+                                    <input type="checkbox" name="radio-card" id="radio-card-1" />
+                                    <div class="card-content-wrapper">
+
+                                        <div class="card-content">
+                                            <p class="desc">
+                                                <strong>口座番号　:</strong>
+                                                <span>9668668656789</span>
+                                            </p>
+                                            <p class="desc">
+                                                <strong>お名義　　:</strong>
+                                                <span>おかかえ運転手株式会社</span>
+                                            </p>
+                                            <p class="desc">
+                                                <strong>金額　　　:</strong>
+                                                <span>70,000 円</span>
+                                            </p>
+                                            <p class="date">
+                                                20時00　24/07/2022
+                                            </p>
+                                        </div>
+                                    </div>
+                                </a>
+                            </label>
+
+                            <label for="radio-card-2" class="radio-card">
+                                <a href="./detail-list-payment.html">
+                                    <input type="checkbox" name="radio-card" id="radio-card-2" />
+                                    <div class="card-content-wrapper">
+
+                                        <div class="card-content">
+                                            <p class="desc">
+                                                <strong>口座番号　:</strong>
+                                                <span>9668668656789</span>
+                                            </p>
+                                            <p class="desc">
+                                                <strong>お名義　　:</strong>
+                                                <span>おかかえ運転手株式会社</span>
+                                            </p>
+                                            <p class="desc">
+                                                <strong>金額　　　:</strong>
+                                                <span>70,000 円</span>
+                                            </p>
+                                            <p class="date">
+                                                20時00　24/07/2022
+                                            </p>
+                                        </div>
+                                    </div>
+                                </a>
+                            </label>
+
+                            <label for="radio-card-3" class="radio-card">
+                                <a href="./detail-list-payment.html">
+                                    <input type="checkbox" name="radio-card" id="radio-card-3" />
+                                    <div class="card-content-wrapper">
+
+                                        <div class="card-content">
+                                            <p class="desc">
+                                                <strong>口座番号　:</strong>
+                                                <span>9668668656789</span>
+                                            </p>
+                                            <p class="desc">
+                                                <strong>お名義　　:</strong>
+                                                <span>おかかえ運転手株式会社</span>
+                                            </p>
+                                            <p class="desc">
+                                                <strong>金額　　　:</strong>
+                                                <span>70,000 円</span>
+                                            </p>
+                                            <p class="date">
+                                                20時00　24/07/2022
+                                            </p>
+                                        </div>
+                                    </div>
+                                </a>
+                            </label>
+
+                        </div>
+                    </div>
+                    <!---End finished-->
+                </div>
+            </div>
+
+    </section>
+    <!--End Main-->
+
+    <!-- Javascript -->
+    <script src="./../assets/js/jquery.min.js"></script>
+    <script src="./../assets/js/jquery-ui.min.js"></script>
+    <script src="./../assets/js/slick.min.js"></script>
+    <script src="./../assets/js/user-common.js"></script>
+
+</body>
+
+</html>
