@@ -1,0 +1,210 @@
+#p-faq {
+    .content {
+        .for {
+            padding: 50px 0 76px;
+            @include br1179{
+                padding: 30px 0 56px;
+            }
+            .container {
+                max-width: 1180px;
+                width: 100%;
+            }
+            .title {
+                text-align: center;
+                padding-bottom: 50px;
+                @include br1179{
+                    padding-bottom: 30px;
+                    img{
+                        width: 140px;
+                    }
+                }
+            }
+            &.owner {
+                background: #F7DCD5;
+            }
+            &.driver {
+                background: #E6E6E6;
+            }
+        }
+        .btn-inquiry{
+            text-align: center;
+            padding: 27px 0 63px;
+            p{
+                font-size: 24px;
+                line-height: 42px;
+                font-weight: 400;
+                color: #000;
+                padding-bottom: 20px;
+                @include br1179{
+                    font-size: 18px;
+                    line-height: 32px;
+                }
+            }
+            a{
+                padding: 18px 30px;
+                border: 2px solid #BC4E25;
+                border-radius: 5px;
+                transition: .2s all;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                width: 380px;
+                max-width: 100%;
+                margin-left: auto;
+                margin-right: auto;
+                span{
+                    font-size: 24px;
+                    line-height: 42px;
+                    font-weight: 400;
+                    color: #BC4E25;
+                }
+                @include br1179{
+                    padding: 18px 20px;
+                    span{
+                        font-size: 18px;
+                        line-height: 32px;
+                    }
+                }
+                &:hover{
+                    background: #BC4E25;
+                    span{
+                        color: #fff;
+                    }
+                }
+            }
+        }
+    }
+    .accordion {
+        .card {
+            background: #fff;
+            margin-bottom: 15px;
+            border: none;
+            &-header {
+                background: #fff;
+                border-bottom: 0;
+                border-radius: 0;
+                @include br1179{
+                    padding: 10px;
+                }
+                h5 {
+                    button {
+                        &.btn-link {
+                            color: #000;
+                            display: flex;
+                            flex-wrap: wrap;
+                            background: url('../images/faq/icn_minus.svg') no-repeat center;
+                            background-position-x: calc(100% - 6px);
+                            background-size: 25px;
+                            width: 100%;
+                            @include br1179{
+                                background-size: 18px;
+                            }
+                            &:hover {
+                                text-decoration: none;
+                            }
+                            &:focus-visible,
+                            &:focus {
+                                outline: none;
+                                box-shadow: none;
+                                text-decoration: none;
+                            }
+                            &.collapsed {
+                                background: url(../images/faq/icn_plus.svg) no-repeat center;
+                                background-size: 25px;
+                                background-position-x: calc(100% - 6px);
+                                width: 100%;
+                                &:hover {
+                                    text-decoration: none;
+                                }
+                                &:focus-visible,
+                                &:focus {
+                                    outline: none;
+                                    box-shadow: none;
+                                    text-decoration: none;
+                                }
+                                @include br1179{
+                                    background-size: 18px;
+                                }
+                            }
+                        }
+                        span {
+                            font-size: 20px;
+                            text-align: left;
+                            line-height: 35px;
+                            font-weight: 400;
+                            flex: 67px;
+                            max-width: 67px;
+                            @include br1179{
+                                flex: 46px;
+                                max-width: 46px;
+                                font-size: 16px;
+                                line-height: 28px;
+                            }
+                            img {
+                                width: 47px;
+                                height: 47px;
+                                @include br1179{
+                                    width: 35px;
+                                    height: 35px;
+                                }
+                            }
+                            +span {
+                                flex: calc(100% - 67px);
+                                max-width: 996px;
+                                padding-right: 40px;
+                                @include br1179{
+                                    flex: calc(100% - 46px);
+                                    padding-right: 15px;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+            &-body {
+                display: flex;
+                padding: 1.25rem 2.25rem;
+                @include br1179{
+                    padding: 15px 25px;
+                }
+                span {
+                    flex: 67px;
+                    max-width: 67px;
+                    @include br1179{
+                        flex: 46px;
+                        max-width: 46px;
+                    }
+                    img {
+                        width: 47px;
+                        height: 47px;
+                        @include br1179{
+                            width: 35px;
+                            height: 35px;
+                        }
+                    }
+                }
+                p {
+                    flex: calc(100% - 67px);
+                    max-width: 996px;
+                    padding-right: 40px;
+                    font-size: 20px;
+                    line-height: 35px;
+                    color: #000;
+                    font-weight: 400;
+                    @include br1179{
+                        flex: calc(100% - 46px);
+                        font-size: 16px;
+                        line-height: 28px;
+                        padding-right: 15px;
+                    }
+                }
+            }
+        }
+    }
+}
+
+.w-100 {
+    width: 100%;
+    max-width: 100%;
+    object-fit: cover;
+}

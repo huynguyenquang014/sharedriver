@@ -1,0 +1,344 @@
+html {
+    overflow-x: hidden;
+}
+
+body {
+    font-family: "Kozuka Gothic Pr6N R";
+    line-height: 1.5;
+    font-size: 14px;
+    font-weight: 400;
+    color: #000;
+    overflow-x: hidden;
+    margin: 0;
+}
+
+$main-color:#BC4E25;
+
+/***** fonts *****/
+
+@font-face {
+    font-family: "Kozuka Gothic Pr6N R";
+    font-style: normal;
+    font-weight: normal;
+    src: url("../font/KozGoPr6NRegular.woff");
+}
+
+@font-face {
+    font-family: "Kozuka Gothic Pr6N B";
+    font-style: normal;
+    font-weight: normal;
+    src: url("../font/KozGoPr6N-Bold.otf");
+}
+
+img {
+    max-width: 100%;
+}
+
+.cbn-wrap {}
+
+.cbn-inner {
+    max-width: 797px;
+    padding-left: 15px;
+    padding-right: 15px;
+    margin-left: auto;
+    margin-right: auto;
+    position: relative;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.p-register {
+    &__logo {
+        text-align: center;
+        margin-top: 83px;
+    }
+    &__slogan {
+        h3 {
+            text-align: center;
+            font-size: 24px;
+            line-height: 32px;
+            font-family: "Kozuka Gothic Pr6N B";
+            margin-top: 24px;
+        }
+    }
+    &__main {
+        margin-top: 24px;
+    }
+    &__form {
+        &-label {
+            h3 {
+                color: $main-color;
+                font-size: 16px;
+                line-height: 19px;
+                font-family: "Kozuka Gothic Pr6N B";
+                margin-block: 0;
+                margin-bottom: 7px;
+            }
+            &--ex {
+                font-size: 16px;
+                line-height: 19px;
+                color: #969696;
+                font-family: "Kozuka Gothic Pr6N B";
+                margin-block: 0;
+                margin-bottom: 15px;
+            }
+        }
+        &-input {
+            margin-bottom: 16px;
+            position: relative;
+            input {
+                width: 100%;
+                height: 44px;
+                background: #fff;
+                border: 1px solid #BDBDBD;
+                border-radius: 12px;
+                font-family: "Kozuka Gothic Pr6N R";
+                font-size: 14px;
+                line-height: 17px;
+                color: #2B2B2B;
+                padding: 0 13px;
+                &:hover,
+                &:focus,
+                &:focus-visible {
+                    background: #FFFAF8;
+                    outline: none;
+                    border: 2px solid $main-color;
+                    padding: 0 12px;
+                }
+            }
+            input[type="password"] {
+                font-size: xx-large !important;
+            }
+            h5 {
+                font-size: 16px;
+                line-height: 19px;
+                color: $main-color;
+                font-family: "Kozuka Gothic Pr6N R";
+                margin-bottom: 8px;
+            }
+            &__show-pass {
+                cursor: pointer;
+                position: absolute;
+                bottom: 4px;
+                right: 13px;
+                z-index: 5;
+                .icn-show {
+                    display: none;
+                }
+                &.show {
+                    .icn-hide {
+                        display: none;
+                    }
+                    .icn-show {
+                        display: block;
+                    }
+                }
+            }
+        }
+        &-group-hanlde {
+            margin-top: 40px;
+            button {
+                width: 100%;
+                padding: 12px 0 17px;
+                background: $main-color;
+                border-radius: 16px;
+                color: #fff;
+                font-family: "Kozuka Gothic Pr6N B";
+                font-size: 16px;
+                line-height: 19px;
+                text-align: center;
+                border: none;
+                display: flex;
+                align-items: center;
+                align-content: center;
+                justify-content: center;
+                cursor: pointer;
+                &:hover {
+                    background: #000;
+                }
+                &:focus,
+                &:focus-visible {
+                    outline: none;
+                }
+            }
+        }
+    }
+    &__img {
+        margin-top: 26px;
+        text-align: center;
+    }
+}
+
+.layout-footer {
+    &__btn-login {
+        height: 58px;
+        background-color: #FFD0C0;
+        text-align: center;
+        display: flex;
+        width: 100%;
+        align-items: center;
+        justify-content: center;
+        a {
+            text-decoration: none;
+            span {
+                color: $main-color;
+                font-family: "Kozuka Gothic Pr6N R";
+                font-size: 14px;
+                line-height: 17px;
+                text-align: center;
+            }
+            &:hover {
+                span {
+                    color: #000;
+                }
+            }
+        }
+    }
+    &__copyright {
+        background: $main-color;
+        height: 42px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+        p {
+            font-family: "Kozuka Gothic Pr6N B";
+            color: #fff;
+            font-size: 8px;
+            line-height: 10px;
+        }
+    }
+}
+
+.cbn-back {
+    margin-top: 43px;
+    a {
+        text-decoration: none;
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        gap: 30px;
+        transition: .4s all;
+        span {
+            font-size: 18px;
+            line-height: 22px;
+            font-family: "Kozuka Gothic Pr6N B";
+            color: $main-color;
+            margin-top: -5px;
+        }
+        &:hover {
+            margin-left: -5px;
+        }
+    }
+}
+
+.p-register-comfirm {
+    .p-register {
+        &__logo {
+            margin-top: 23px;
+        }
+    }
+    &__icn-mail {
+        text-align: center;
+        margin-top: 34px;
+        p {
+            font-size: 16px;
+            line-height: 19px;
+            color: $main-color;
+            font-family: "Kozuka Gothic Pr6N B";
+        }
+    }
+    &__alert {
+        margin-top: 66px;
+        h3 {
+            font-family: "Kozuka Gothic Pr6N B";
+            font-size: 24px;
+            line-height: 32px;
+            text-align: center;
+            margin-bottom: 26px;
+        }
+        p {
+            text-align: center;
+            font-size: 18px;
+            font-family: "Kozuka Gothic Pr6N R";
+            line-height: 32px;
+        }
+    }
+    +.layout-footer {
+        margin-top: 100px;
+    }
+}
+
+.p-register-option {
+    .p-register__slogan h3 {
+        margin-top: 100px;
+    }
+    .p-register__main {
+        margin-top: 28px;
+    }
+    &__events {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 19px;
+        a {
+            text-decoration: none;
+            width: 50%;
+            min-width: 162px;
+            max-width: 162px;
+            max-height: 104px;
+            text-align: center;
+        }
+        label.radio-card {
+            cursor: pointer;
+            position: relative;
+            .card-content-wrapper {
+                background: $main-color;
+                border-radius: 5px;
+                height: 104px;
+                padding: 18px;
+                display: grid;
+                box-shadow: 0 2px 4px 0 rgb(219 215 215 / 4%);
+                transition: 200ms linear;
+                border: 1px solid $main-color;
+                border-radius: 6px;
+                text-align: center;
+            }
+            &:hover {
+                .card-content-wrapper {
+                    background: #000;
+                    border: 1px solid #000;
+                }
+            }
+            p {
+                font-size: 14px;
+                line-height: 17px;
+                color: #fff;
+            }
+        }
+        .card-content {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: space-between;
+        }
+    }
+}
+
+.p-register-password {
+    .p-register {
+        &__logo {
+            margin-top: 23px;
+        }
+        &__main {
+            margin-top: 54px;
+        }
+    }
+    .p-register__form-group-hanlde {
+        margin-top: 76px;
+    }
+}

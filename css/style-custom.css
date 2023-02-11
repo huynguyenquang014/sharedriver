@@ -1,0 +1,352 @@
+html {
+  overflow-x: hidden;
+}
+
+body {
+  font-family: "Kozuka Gothic Pr6N R";
+  line-height: 1.5;
+  font-size: 14px;
+  font-weight: 400;
+  color: #000;
+  overflow-x: hidden;
+  margin: 0;
+}
+
+/***** fonts *****/
+@font-face {
+  font-family: "Kozuka Gothic Pr6N R";
+  font-style: normal;
+  font-weight: normal;
+  src: url("../font/KozGoPr6NRegular.woff");
+}
+@font-face {
+  font-family: "Kozuka Gothic Pr6N B";
+  font-style: normal;
+  font-weight: normal;
+  src: url("../font/KozGoPr6N-Bold.otf");
+}
+img {
+  max-width: 100%;
+}
+
+.cbn-inner {
+  max-width: 797px;
+  padding-left: 15px;
+  padding-right: 15px;
+  margin-left: auto;
+  margin-right: auto;
+  position: relative;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+.p-register__logo {
+  text-align: center;
+  margin-top: 83px;
+}
+.p-register__slogan h3 {
+  text-align: center;
+  font-size: 24px;
+  line-height: 32px;
+  font-family: "Kozuka Gothic Pr6N B";
+  margin-top: 24px;
+}
+.p-register__main {
+  margin-top: 24px;
+}
+.p-register__form-label h3 {
+  color: #BC4E25;
+  font-size: 16px;
+  line-height: 19px;
+  font-family: "Kozuka Gothic Pr6N B";
+  margin-block: 0;
+  margin-bottom: 7px;
+}
+.p-register__form-label--ex {
+  font-size: 16px;
+  line-height: 19px;
+  color: #969696;
+  font-family: "Kozuka Gothic Pr6N B";
+  margin-block: 0;
+  margin-bottom: 15px;
+}
+.p-register__form-input {
+  margin-bottom: 16px;
+  position: relative;
+}
+.p-register__form-input input {
+  width: 100%;
+  height: 44px;
+  background: #fff;
+  border: 1px solid #BDBDBD;
+  border-radius: 12px;
+  font-family: "Kozuka Gothic Pr6N R";
+  font-size: 14px;
+  line-height: 17px;
+  color: #2B2B2B;
+  padding: 0 13px;
+}
+.p-register__form-input input:hover, .p-register__form-input input:focus, .p-register__form-input input:focus-visible {
+  background: #FFFAF8;
+  outline: none;
+  border: 2px solid #BC4E25;
+  padding: 0 12px;
+}
+.p-register__form-input input[type=password] {
+  font-size: xx-large !important;
+}
+.p-register__form-input h5 {
+  font-size: 16px;
+  line-height: 19px;
+  color: #BC4E25;
+  font-family: "Kozuka Gothic Pr6N R";
+  margin-bottom: 8px;
+}
+.p-register__form-input__show-pass {
+  cursor: pointer;
+  position: absolute;
+  bottom: 4px;
+  right: 13px;
+  z-index: 5;
+}
+.p-register__form-input__show-pass .icn-show {
+  display: none;
+}
+.p-register__form-input__show-pass.show .icn-hide {
+  display: none;
+}
+.p-register__form-input__show-pass.show .icn-show {
+  display: block;
+}
+.p-register__form-group-hanlde {
+  margin-top: 40px;
+}
+.p-register__form-group-hanlde button {
+  width: 100%;
+  padding: 12px 0 17px;
+  background: #BC4E25;
+  border-radius: 16px;
+  color: #fff;
+  font-family: "Kozuka Gothic Pr6N B";
+  font-size: 16px;
+  line-height: 19px;
+  text-align: center;
+  border: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-line-pack: center;
+      align-content: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  cursor: pointer;
+}
+.p-register__form-group-hanlde button:hover {
+  background: #000;
+}
+.p-register__form-group-hanlde button:focus, .p-register__form-group-hanlde button:focus-visible {
+  outline: none;
+}
+.p-register__img {
+  margin-top: 26px;
+  text-align: center;
+}
+
+.layout-footer__btn-login {
+  height: 58px;
+  background-color: #FFD0C0;
+  text-align: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+.layout-footer__btn-login a {
+  text-decoration: none;
+}
+.layout-footer__btn-login a span {
+  color: #BC4E25;
+  font-family: "Kozuka Gothic Pr6N R";
+  font-size: 14px;
+  line-height: 17px;
+  text-align: center;
+}
+.layout-footer__btn-login a:hover span {
+  color: #000;
+}
+.layout-footer__copyright {
+  background: #BC4E25;
+  height: 42px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  width: 100%;
+}
+.layout-footer__copyright p {
+  font-family: "Kozuka Gothic Pr6N B";
+  color: #fff;
+  font-size: 8px;
+  line-height: 10px;
+}
+
+.cbn-back {
+  margin-top: 43px;
+}
+.cbn-back a {
+  text-decoration: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 30px;
+  -webkit-transition: 0.4s all;
+  transition: 0.4s all;
+}
+.cbn-back a span {
+  font-size: 18px;
+  line-height: 22px;
+  font-family: "Kozuka Gothic Pr6N B";
+  color: #BC4E25;
+  margin-top: -5px;
+}
+.cbn-back a:hover {
+  margin-left: -5px;
+}
+
+.p-register-comfirm .p-register__logo {
+  margin-top: 23px;
+}
+.p-register-comfirm__icn-mail {
+  text-align: center;
+  margin-top: 34px;
+}
+.p-register-comfirm__icn-mail p {
+  font-size: 16px;
+  line-height: 19px;
+  color: #BC4E25;
+  font-family: "Kozuka Gothic Pr6N B";
+}
+.p-register-comfirm__alert {
+  margin-top: 66px;
+}
+.p-register-comfirm__alert h3 {
+  font-family: "Kozuka Gothic Pr6N B";
+  font-size: 24px;
+  line-height: 32px;
+  text-align: center;
+  margin-bottom: 26px;
+}
+.p-register-comfirm__alert p {
+  text-align: center;
+  font-size: 18px;
+  font-family: "Kozuka Gothic Pr6N R";
+  line-height: 32px;
+}
+.p-register-comfirm + .layout-footer {
+  margin-top: 100px;
+}
+
+.p-register-option .p-register__slogan h3 {
+  margin-top: 100px;
+}
+.p-register-option .p-register__main {
+  margin-top: 28px;
+}
+.p-register-option__events {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  gap: 19px;
+}
+.p-register-option__events a {
+  text-decoration: none;
+  width: 50%;
+  min-width: 162px;
+  max-width: 162px;
+  max-height: 104px;
+  text-align: center;
+}
+.p-register-option__events label.radio-card {
+  cursor: pointer;
+  position: relative;
+}
+.p-register-option__events label.radio-card .card-content-wrapper {
+  background: #BC4E25;
+  border-radius: 5px;
+  height: 104px;
+  padding: 18px;
+  display: -ms-grid;
+  display: grid;
+  -webkit-box-shadow: 0 2px 4px 0 rgba(219, 215, 215, 0.04);
+          box-shadow: 0 2px 4px 0 rgba(219, 215, 215, 0.04);
+  -webkit-transition: 200ms linear;
+  transition: 200ms linear;
+  border: 1px solid #BC4E25;
+  border-radius: 6px;
+  text-align: center;
+}
+.p-register-option__events label.radio-card:hover .card-content-wrapper {
+  background: #000;
+  border: 1px solid #000;
+}
+.p-register-option__events label.radio-card p {
+  font-size: 14px;
+  line-height: 17px;
+  color: #fff;
+}
+.p-register-option__events .card-content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.p-register-password .p-register__logo {
+  margin-top: 23px;
+}
+.p-register-password .p-register__main {
+  margin-top: 54px;
+}
+.p-register-password .p-register__form-group-hanlde {
+  margin-top: 76px;
+}

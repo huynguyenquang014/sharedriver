@@ -1,0 +1,250 @@
+$active: #b94e25;
+
+.p-contact{
+    .container{
+        max-width: 1030px;
+    }
+    .c-title{
+        font-size: 36px;
+        line-height: 48px;
+        text-align: center;
+        font-family: "Kozuka Gothic Pr6N B";
+    }
+    &#top .top__for-driver{
+        padding-bottom: 33px;
+    }
+    &__top{
+        .c-title{
+            color: $active;
+            margin-bottom: 46px;
+        }
+        p{
+            font-size: 20px;
+            line-height: 32px;
+        }
+    }
+
+    &__form{
+        background-color: rgba(227, 227, 227, 0.4);
+        padding: 99px 0 140px;
+        margin-top: 76px;
+        form{
+            .form-group{
+                display: flex;
+                align-items: baseline;
+                margin-bottom: 30.5px;
+                .form-radio{
+                    .form-check{
+                        padding-left: 0;
+                        margin-right: 21px;
+                    }
+                    display: flex;
+                    [type="radio"]:checked,
+                    [type="radio"]:not(:checked) {
+                        position: absolute;
+                        left: -9999px;
+                    }
+                    [type="radio"]:checked + label,
+                    [type="radio"]:not(:checked) + label
+                    {
+                        position: relative;
+                        padding-left: 40px;
+                        cursor: pointer;
+                        display: inline-block;
+                        min-width: auto;
+                        margin-right: 0;
+                    }
+                    [type="radio"]:checked + label:before,
+                    [type="radio"]:not(:checked) + label:before {
+                        content: '';
+                        position: absolute;
+                        left: 0;
+                        top: 0;
+                        width: 30px;
+                        height: 30px;
+                        border: 1px solid #969696;
+                        border-radius: 100%;
+                        background: #fff;
+                    }
+                    [type="radio"]:checked + label:after,
+                    [type="radio"]:not(:checked) + label:after {
+                        content: '';
+                        width: 16px;
+                        height: 16px;
+                        background: #969696;
+                        position: absolute;
+                        top: 7px;
+                        left: 7px;
+                        border-radius: 100%;
+                        -webkit-transition: all 0.2s ease;
+                        transition: all 0.2s ease;
+                    }
+                    [type="radio"]:not(:checked) + label:after {
+                        opacity: 0;
+                        -webkit-transform: scale(0);
+                        transform: scale(0);
+                    }
+                    [type="radio"]:checked + label:after {
+                        opacity: 1;
+                        -webkit-transform: scale(1);
+                        transform: scale(1);
+                    }
+                }
+                label{
+                    font-size: 20px;
+                    line-height: 30px;
+                    font-family: "Kozuka Gothic Pr6N B";
+                    min-width: 321px;
+                    margin-right: 0;
+                    margin-bottom: 0;
+                    span{
+                        color: #fff;
+                        min-width: 57px;
+                        text-align: center;
+                        padding: 4px 4px;
+                        background-color: #b94e25;
+                        display: inline-flex;
+                        height: 42px;
+                        justify-content: center;
+                        margin-right: 24px;
+                        &.hidden{
+                            opacity: 0;
+                        }
+                    }
+                }
+                input{
+                    height: 50px;
+                    border-radius: 0;
+                    width: 498px;
+                    max-width: 100%;
+                    border-color: #969696;
+                    &:focus{
+                        box-shadow: none;
+                    }
+                    &.small-width{
+                        width: 185px;
+                    }
+                }
+                textarea{
+                    border-radius: 0;
+                    width: 670px;
+                    max-width: 100%;
+                    border-color: #969696;
+                    height: 243px;
+                    position: relative;
+                    top: -12px;
+                    padding: 5px 10px;
+                    &:focus-visible{
+                        outline: none;
+                    }
+                }
+            }
+        }
+        &__footer{
+            text-align: center;
+            margin-top: 80px;
+            display: flex;
+            justify-content: center;
+            button{
+                font-size: 24px;
+                line-height: 42px;
+                color: $active;
+                border: 2px solid $active;
+                width: 380px;
+                height: 80px;
+                text-align: center;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                background-color: transparent;
+                &:hover{
+                    color: $active;
+                }
+            }
+        }
+    }
+
+    &__info{
+        padding: 68px 0 170px;
+        background-color: #e3e3e3;
+        .c-title{
+            margin-bottom: 30px;
+        }
+        .desc{
+            font-size: 20px;
+            line-height: 32px;
+            margin-bottom: 32px;
+            padding-left: 43px;
+        }
+        ul{
+            counter-reset: item;
+            li{
+                font-size: 20px;
+                line-height: 32px;
+                margin-bottom: 0;
+                position: relative;
+                counter-increment: item;
+                padding-left: 43px;
+                &::before{
+                    content: counter(item);
+                    position: absolute;
+                    left: 14px;
+                }
+            }
+        }
+    }
+}
+@media (max-width: 767px){
+    .p-contact .c-title{
+        font-size: 24px;
+        line-height: 48px;
+    }
+    .p-contact__top p {
+        font-size: 14px;
+        line-height: 24px;
+    }
+    .p-contact__form form .form-group{
+        flex-direction: column;
+    }
+    .p-contact__form form .form-group label{
+        font-size: 14px;
+        line-height: 24px;
+        margin-bottom: 15px;
+    }
+    .p-contact__form form .form-group label span{
+        height: 35px;
+    }
+    .p-contact__form form .form-group input{
+        height: 40px;
+        width: 100% !important;
+    }
+    .p-contact__form form .form-group label span.hidden{
+        display: none;
+    }
+    .p-contact__form form .form-group textarea{
+        top: 0;
+    }
+    .p-contact__form {
+        padding: 60px 0 70px;
+    }
+    .p-contact__form__footer{
+        margin-top: 40px;
+    }
+    .p-contact__form__footer button{
+        font-size: 20px;
+        height: 70px;
+    }
+    .p-contact__info .desc {
+        font-size: 14px;
+        line-height: 24px;
+        margin-bottom: 32px;
+        padding-left: 0;
+    }
+    .p-contact__info ul li {
+        font-size: 14px;
+        line-height: 24px;
+    }
+    .p-contact__info {
+        padding: 50px 0 70px;
+    }
+}

@@ -1,0 +1,99 @@
+.c-top-mv {
+    position: relative;
+    >img {
+        min-height: 400px;
+        object-fit: cover;
+    }
+    .content {
+        position: absolute;
+        top: calc(50% - 71px);
+        left: 50%;
+        transform: translate(-50%, -50%);
+        width: calc(100% - 50px);
+        h3 {
+            font-size: 36px;
+            line-height: 63px;
+            color: #fff;
+            text-align: center;
+            font-weight: 700;
+            text-shadow: 3px 3px 15px #000;
+            @include br1179 {
+                font-size: 30px;
+                line-height: 50px;
+            }
+        }
+    }
+    .name-page {
+        text-align: center;
+        position: relative;
+        margin-top: -75px;
+        @include br1179 {
+            margin-top: -50px;
+        }
+        .logo {
+            img {
+                width: 150px;
+                position: relative;
+                z-index: 1;
+                @include br1179 {
+                    width: 100px;
+                }
+            }
+        }
+        .title-page {
+            h3 {
+                font-size: 36px;
+                line-height: 48px;
+                font-weight: 700;
+                color: #000;
+                text-align: center;
+                @include br1179 {
+                    font-size: 30px;
+                }
+            }
+        }
+    }
+    &__slider {
+        .slick-dots {
+            position: absolute;
+            z-index: 10;
+            display: flex;
+            flex-wrap: wrap;
+            align-items: center;
+            justify-content: center;
+            left: 50%;
+            transform: translateX(-50%);
+            gap: 5px;
+            bottom: 200px;
+            @include br1179 {
+                bottom: 30px;
+            }
+            li {
+                button {
+                    font-size: 0;
+                    border: none;
+                    border-radius: 50%;
+                    height: 12px;
+                    width: 12px;
+                }
+                &.slick-active {
+                    button {
+                        background: #BC4E25;
+                    }
+                }
+            }
+        }
+        .slick-slide {
+            img {
+                min-height: 400px;
+            }
+        }
+    }
+}
+
+@media (max-width: 767px) {
+    .c-top-mv>img {
+        height: 400px;
+        object-fit: cover;
+    }
+}

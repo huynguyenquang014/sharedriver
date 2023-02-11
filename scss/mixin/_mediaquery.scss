@@ -1,0 +1,61 @@
+@charset "utf-8";
+
+// ----------------------------------------------------------------------
+// MediaQuery
+// ----------------------------------------------------------------------
+@mixin br1920 {
+	@media only screen and (min-width: ($width-br1920 + $width-scrollbar)) {
+		@content;
+	}
+}
+
+@mixin br1750 {
+	@media (max-width: ($width-br1750 + $width-scrollbar)) {
+		@content;
+	}
+}
+
+@mixin br1580 {
+	@media (max-width: ($width-br1580 + $width-scrollbar)) {
+		@content;
+	}
+}
+
+@mixin br1346 {
+	@media (max-width: ($width-br1346 + $width-scrollbar)) {
+		@content;
+	}
+}
+
+//tablet
+@mixin br1179 {
+	@media (max-width: ($width-br1179 + $width-scrollbar)) {
+		@content;
+	}
+}
+
+@mixin br971 {
+	@media (max-width: ($width-br971 + $width-scrollbar)) {
+		@content;
+	}
+}
+
+//mobile
+@mixin br747 {
+	@media (max-width: ($width-br747 + $width-scrollbar)) {
+		@content;
+	}
+}
+
+@mixin br555 {
+	@media ( max-width: ($width-br555 + $width-scrollbar)) {
+		@content;
+	}
+}
+
+@mixin br355 {
+	@media (max-width: ($width-br370 + $width-scrollbar)) {
+		@content;
+	}
+}
+
